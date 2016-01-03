@@ -67,11 +67,11 @@
 	       </span>
 		 </div>
 		 <div style="padding-left:18%;display:inline;">
-		   <div class="barEl">首页</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" style="color:#CCFF00;">活动中心</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" style="color:#FF9900;">资讯</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl">登录</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" style="color:#CCFF00;">注册</div>&nbsp;&nbsp;&nbsp;
+		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))">首页</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;">活动中心</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))"style="color:#FF9900;">资讯</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))">登录</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;">注册</div>&nbsp;&nbsp;&nbsp;
 		 </div>
 	  </div>
     </div>
@@ -96,32 +96,49 @@
   </div>
 
   <div id="v" style="position:absolute;left:0px;top:72%;width:100%;height:100%;background-color:#FFFFFF;">
-     <div style="margin:10% 0% 10% 0%;text-align:center;">
+     <div class="intro">
 	    <img style="max-width:100%;" src="../../image/homepage/u28.png"/>
-		<div style="font-family:微软雅黑;color:#00CCFF;">
+		<div style="font-family:微软雅黑;color:#00CCFF;" onmouseover="addMediaf($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>同乡会活动</strong></span><br/>
            <span class="si">查看并加入近期同乡会开启的各种活动
 		</div>
 	 </div>
 	 <hr style="width:60%;">
-	 <div style="margin:10% 0% 10% 0%;text-align:center;">
+	 <div class="intro">
 	    <img style="max-width:100%;" src="../../image/homepage/u34.png"/>
-		<div style="font-family:微软雅黑;color:#CCFF00;">
+		<div style="font-family:微软雅黑;color:#CCFF00;" onmouseover="addMedias($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>同乡会资讯</strong></span><br/>
            <span class="si">开启查看同乡会近期各种资讯
 		</div>
 	 </div>
 	 <hr style="width:60%;">
-	 <div style="margin:10% 0% 10% 0%;text-align:center;">
+	 <div class="intro">
 	    <img style="max-width:100%;" src="../../image/homepage/u40.png"/>
-		<div style="font-family:微软雅黑;color:#FF9900;">
+		<div style="font-family:微软雅黑;color:#FF9900;" onmouseover="addMediat($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>资源共享</strong></span><br/>
            <span class="si">开启查看各种资源链接
 		</div>
 	 </div>
 
   </div><br/><br/>
-  <div id="foot" style="border-radius:3px;box-shadow: 0px 0px 18px 0px;position:absolute;width:100%;height:30%;background-color:#CCCCCC;left:0px;bottom:0px;">   
+  <div id="foot" style="font-family:微软雅黑;border-radius:6px;box-shadow: 0px 0px 18px 0px;position:absolute;width:100%;height:30%;background-color:#CCCCCC;left:0px;bottom:0px;">   
+    <div style="font-family:微软雅黑;margin-top:5%;">  
+	  <div>
+	     <a href="#"><span class="si">联系我们</span></a>
+	  </div><br/>
+	  <div style="font-family:微软雅黑;display:inline;">
+		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">首页</span></div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">活动</span></div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">资讯</span></div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">管理员中心</span></div>&nbsp;&nbsp;&nbsp;
+	  </div><br/><br/>
+	  <div>
+	       <a href="http://www.scut.edu.cn/"><span style="color:#999999;" class="xsi">友情链接:华南理工大学官网</span></a>
+	  </div><br/>
+	  <div>
+	     <span class="xsi">备案信息:xxxxxxxxxxxxxxxxxxxxxx</span>
+	  </div>
+	</div>
   </div>
  </div>
 </body>
