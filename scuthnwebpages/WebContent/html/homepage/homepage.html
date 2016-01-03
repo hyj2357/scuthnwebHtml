@@ -47,6 +47,12 @@
 		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
 	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
 		 }else{
+			$(".top").css("box-shadow","0px 0px 0px 0px");
+            $("#introimgf").css("width","15%");
+            $("#introimgs").css("width","15%");
+            $("#introimgt").css("width","15%");
+            $("#logoimg").css("height","25%");
+
 			$("#content").css("left","5%");
             $("#content").css("margin-top","10%");
 			$(".xbi").css("font-size","0.6em");
@@ -115,7 +121,7 @@
     
 	<div id="content" style="position:absolute;Z-index:99;margin-top:15%;left:18%;color:#00CCFF;font-size:2.5em;font-family:华文楷体;">
 	       <div id="topLogo" style="display:inline;">
-		     <img style="max-width:100%;max-height:100%;vertical-align:middle;width:20%;height:20%;" src="../../image/homepage/u6.png"/>
+		     <img id="logoimg" style="max-width:100%;max-height:100%;vertical-align:middle;width:20%;height:20%;" src="../../image/homepage/u6.png"/>
 		   </div>
 		   <span class="xbi">
 		     <strong>华南理工大学XX同乡会</strong>
@@ -136,7 +142,7 @@
 
   <div id="v" style="position:absolute;left:0px;top:72%;width:100%;height:100%;background-color:#FFFFFF;">
      <div class="intro">
-	    <img style="max-width:100%;width:5%;" src="../../image/homepage/u28.png"/>
+	    <img id="introimgf" style="max-width:100%;width:5%;" src="../../image/homepage/u28.png"/>
 		<div style="font-family:微软雅黑;color:#00CCFF;" onmouseover="addMediaf($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>同乡会活动</strong></span><br/>
            <span class="si">查看并加入近期同乡会开启的各种活动
@@ -144,7 +150,7 @@
 	 </div>
 	 <hr style="width:60%;">
 	 <div class="intro">
-	    <img style="max-width:100%;width:5%;" src="../../image/homepage/u34.png"/>
+	    <img id="introimgs" style="max-width:100%;width:5%;" src="../../image/homepage/u34.png"/>
 		<div style="font-family:微软雅黑;color:#CCFF00;" onmouseover="addMedias($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>同乡会资讯</strong></span><br/>
            <span class="si">开启查看同乡会近期各种资讯
@@ -152,7 +158,7 @@
 	 </div>
 	 <hr style="width:60%;">
 	 <div class="intro">
-	    <img style="max-width:100%;width:5%;" src="../../image/homepage/u40.png"/>
+	    <img id="introimgt" style="max-width:100%;width:5%;" src="../../image/homepage/u40.png"/>
 		<div style="font-family:微软雅黑;color:#FF9900;" onmouseover="addMediat($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>资源共享</strong></span><br/>
            <span class="si">开启查看各种资源链接
