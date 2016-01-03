@@ -65,6 +65,9 @@
 	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
 			$("#foot").css("visibility","hidden");
 			$("hr").css("visibility","hidden");
+
+            $("#sp").css("visibility","visable");
+            $("#wechat").css("visibility","visable");
 		 }
 
 		 $(".top").css("width",_w);
@@ -164,9 +167,10 @@
            <span class="si">开启查看各种资源链接
 		</div>
 	 </div>
+	 <hr id="sp" style="visibility:hidden;width:60%;">
      <div id="wechat" style="visibility:hidden;">
         <div>
-	       <img src="http://139.129.24.81:8082/scuthnhtml/image/homepage/u71.jpg">
+	       <img src="http://139.129.24.81:8082/scuthnhtml/image/homepage/w3.jpeg">
 	    </div>
      </div>
   </div>
