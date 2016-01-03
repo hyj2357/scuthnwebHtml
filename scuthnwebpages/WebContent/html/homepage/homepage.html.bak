@@ -66,8 +66,8 @@
 			$("#foot").css("visibility","hidden");
 			$("hr").css("visibility","hidden");
 
-            $("#sp").css("visibility","visable");
-            $("#wechat").css("visibility","visable");
+            $("#sp").css("visibility","visible");
+            $("#wechat").css("visibility","visible");
 		 }
 
 		 $(".top").css("width",_w);
@@ -171,6 +171,15 @@
      <div id="wechat" style="visibility:hidden;">
         <div>
 	       <img src="http://139.129.24.81:8082/scuthnhtml/image/homepage/w3.jpeg">
+	    </div>
+		<div style="font-family:微软雅黑;width:100%;height:30%;background-color:#CCCCCC;">
+		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">首页</span></div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">活动</span></div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">资讯</span></div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">管理员中心</span></div>&nbsp;&nbsp;&nbsp;
+		</div>
+		<div>
+	     <span class="xsi">备案信息:xxxxxxxxxxxxxxxxxxxxxx</span>
 	    </div>
      </div>
   </div>
