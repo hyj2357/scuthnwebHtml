@@ -9,9 +9,12 @@
   <script src="../../js/homepage/script.js"></script>
   
   <script type="text/javascript">
-     window.onresize=function(){  
+     //var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+     //if(parseFloat(w)>768){
+        window.onresize=function(){  
                  ctop();  
-     } 
+        } 
+	 //}
 	 window.onload=function(){
 		 var w=window.innerWidth
          || document.documentElement.clientWidth
@@ -23,7 +26,12 @@
 		   _w = 1200;
 		   $("#wrap").css("margin-left",v+"px");
            $("#wrap").css("margin-right",v+"px");
+		 }else if(_w<786){
+			$()
+		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
+	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
 		 }
+
 		 $(".top").css("width",_w);
 		 $(".top").css("height",_w*0.5);
 
@@ -77,11 +85,13 @@
     </div>
     
 	<div id="content" style="position:absolute;Z-index:99;margin-top:15%;left:18%;color:#00CCFF;font-size:2.5em;font-family:华文楷体;">
-	       <img style="max-width:10.37%;max-height:100%;vertical-align: middle;width:10.37%;height:100%;" src="../../image/homepage/u6.png"/>
+	       <div id="topLogo" style="display:inline;">
+		     <img style="max-width:10.37%;max-height:100%;vertical-align: middle;width:10.37%;height:100%;" src="../../image/homepage/u6.png"/>
+		   </div>
 		   <span class="xbi">
 		     <strong>华南理工大学XX同乡会</strong>
 		   </span><br/></br>
-		   <span class="xsi" style="font-family:微软雅黑;color:#E4E4E4;">
+		   <span id="otherContent" class="xsi" style="font-family:微软雅黑;color:#E4E4E4;">
 		     <strong>加入华工XX同乡会,和我们一起成长吧!</strong>
 		   </span>
 		   <div id="topBtn" style="height:3em;width:30%;border-width:0.1em;cursor:pointer;border-color:#00CCFF;border-style:solid;border-radius:19px;font-size:0.5em;color:#00CCFF;margin-left:auto;margin-right:auto;margin-top:2%;" onmousemove="cover();" onmouseout="cout();">
@@ -97,7 +107,7 @@
 
   <div id="v" style="position:absolute;left:0px;top:72%;width:100%;height:100%;background-color:#FFFFFF;">
      <div class="intro">
-	    <img style="max-width:100%;" src="../../image/homepage/u28.png"/>
+	    <img style="max-width:100%;width:5%;" src="../../image/homepage/u28.png"/>
 		<div style="font-family:微软雅黑;color:#00CCFF;" onmouseover="addMediaf($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>同乡会活动</strong></span><br/>
            <span class="si">查看并加入近期同乡会开启的各种活动
@@ -105,7 +115,7 @@
 	 </div>
 	 <hr style="width:60%;">
 	 <div class="intro">
-	    <img style="max-width:100%;" src="../../image/homepage/u34.png"/>
+	    <img style="max-width:100%;width:5%;" src="../../image/homepage/u34.png"/>
 		<div style="font-family:微软雅黑;color:#CCFF00;" onmouseover="addMedias($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>同乡会资讯</strong></span><br/>
            <span class="si">开启查看同乡会近期各种资讯
@@ -113,28 +123,28 @@
 	 </div>
 	 <hr style="width:60%;">
 	 <div class="intro">
-	    <img style="max-width:100%;" src="../../image/homepage/u40.png"/>
+	    <img style="max-width:100%;width:5%;" src="../../image/homepage/u40.png"/>
 		<div style="font-family:微软雅黑;color:#FF9900;" onmouseover="addMediat($(this));" onmouseout="removeMedia($(this));">
 		   <span class="bi"><strong>资源共享</strong></span><br/>
            <span class="si">开启查看各种资源链接
 		</div>
 	 </div>
 
-  </div><br/><br/>
+  </div>
   <div id="foot" style="font-family:微软雅黑;border-radius:6px;box-shadow: 0px 0px 18px 0px;position:absolute;width:100%;height:30%;background-color:#CCCCCC;left:0px;bottom:0px;">   
     <div style="font-family:微软雅黑;margin-top:5%;">  
 	  <div>
-	     <a href="#"><span class="si">联系我们</span></a>
-	  </div><br/>
+	     <a target="_blank" href="#"><span class="si">联系我们</span></a>
+	  </div>
 	  <div style="font-family:微软雅黑;display:inline;">
 		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">首页</span></div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">活动</span></div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">资讯</span></div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">管理员中心</span></div>&nbsp;&nbsp;&nbsp;
-	  </div><br/><br/>
+	  </div>
 	  <div>
-	       <a href="http://www.scut.edu.cn/"><span style="color:#999999;" class="xsi">友情链接:华南理工大学官网</span></a>
-	  </div><br/>
+	       <a target="_blank" href="http://www.scut.edu.cn/"><span style="color:#999999;" class="xsi">友情链接:华南理工大学官网</span></a>
+	  </div>
 	  <div>
 	     <span class="xsi">备案信息:xxxxxxxxxxxxxxxxxxxxxx</span>
 	  </div>

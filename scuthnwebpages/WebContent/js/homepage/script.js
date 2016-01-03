@@ -20,10 +20,22 @@ if(ef>1200)          //如果尺寸在1000px以上,停止变化,并且两边留白.
 	var v = (ef - before_ef)/2;
 	$("#wrap").css("margin-left",v+"px");
     $("#wrap").css("margin-right",v+"px");
+
+	$("#topLogo").css("display","inline");
+	$("#topBtn").css("visibility","visible");    
+	$("#otherContent").css("visibility","visible");
 	return;
+}else if(ef<786){
+	$("#topLogo").css("display","block");
+	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
+	$("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
 }else{
 	$("#wrap").css("margin-left",0+"px");
     $("#wrap").css("margin-right",0+"px");
+	
+	$("#topLogo").css("display","inline");
+	$("#topBtn").css("visibility","visible");    
+	$("#otherContent").css("visibility","visible");
 }
 df = ef*0.5;
 
