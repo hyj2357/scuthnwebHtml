@@ -3,6 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <title>华工xx同乡会</title>
   <link rel="stylesheet" type="text/css" href="../../css/homepage/style.css" />
   <script src="../../js/public/jquery-2.1.4.min.js"></script>
@@ -21,15 +22,43 @@
          || document.body.clientWidth;
          var _w = parseInt(w);
          
-		 if(_w>1200){
+            var userAgentInfo = navigator.userAgent; 
+            var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"); 
+            var flag = true; 
+            for (var v = 0; v < Agents.length; v++) { 
+                if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; } 
+            }      
+
+		 if(_w>1200 && flag){
 		   var v = (_w -1200)/2;
 		   _w = 1200;
 		   $("#wrap").css("margin-left",v+"px");
            $("#wrap").css("margin-right",v+"px");
-		 }else if(_w<786){
+		 }else if(_w<786 && flag){
 			$("#topLogo").css("display","block");
 		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
 	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
+		 }else if(_w<400 && flag){
+			//$("body").css("background-color","#FFFFFF");
+            $(".blackC_t").css("visibility","hidden");			
+            $(".topbar").css("visibility","hidden");
+			//$(".fillContent").css("background-image","url()");
+			$("#topLogo").css("display","block");
+		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
+	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
+		 }else{
+			$("#content").css("left","5%");
+            $("#content").css("margin-top","10%");
+			$(".xbi").css("font-size","0.6em");
+			$("body").css("background-color","#FFFFFF");
+            $(".blackC_t").css("visibility","hidden");			
+            $(".topbar").css("visibility","hidden");
+			$(".fillContent").css("background-image","url()");
+			$("#topLogo").css("display","block");
+		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
+	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
+			$("#foot").css("visibility","hidden");
+			$("hr").css("visibility","hidden");
 		 }
 
 		 $(".top").css("width",_w);
@@ -64,7 +93,7 @@
 	</div>
 	<div class="blackC_t">
 	</div>
-	<div class="topbar">
+	<div id="tbar" class="topbar">
 	  <div style="display:inline;">
 	     <img style="max-width:8.296%;max-height:80%;vertical-align: middle;width:8.296%;height:80%;" src="../../image/homepage/u6.png"/>
 	  </div>
