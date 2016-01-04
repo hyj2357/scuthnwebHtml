@@ -17,20 +17,21 @@ var before_ef = ef;
 ef = parseInt(w);
 if(ef>1200)          //如果尺寸在1000px以上,停止变化,并且两边留白.
 {
-	var v = (ef - before_ef)/2;
+	var v = (ef - 1200)/2;
 	$("#wrap").css("margin-left",v+"px");
     $("#wrap").css("margin-right",v+"px");
 
 	$("#topLogo").css("display","inline");
 	$("#topBtn").css("visibility","visible");    
 	$("#otherContent").css("visibility","visible");
-	return;
-}else if(ef<786){
+	ef = 1200;    //固定宽度为1200px
+}else if(ef<900){
+    $("#wrap").css("margin-left",0+"px");
+    $("#wrap").css("margin-right",0+"px"); 
+
 	$("#topLogo").css("display","block");
 	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
 	$("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
-
-	$()
 }else{
 	$("#wrap").css("margin-left",0+"px");
     $("#wrap").css("margin-right",0+"px");
@@ -54,9 +55,9 @@ $("#foot").css("top",top+"px");
 $("#foot").css("width",ef+"px");
 $("#foot").css("height",(ef/4)+"px");
 
-var w_topBar = parseInt(w)*0.1;
+var h_topBar = ef*0.1;
 $(".blackC_t").css("width",ef+"px");
-$(".blackC_t").css("height",w_topBar+"px");
+$(".blackC_t").css("height",h_topBar+"px");
 $(".topbar").css("width",ef+"px");
 $(".topbar").css("height",w_topBar+"px");
 
