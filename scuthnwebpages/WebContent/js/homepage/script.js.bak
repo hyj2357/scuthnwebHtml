@@ -59,12 +59,29 @@ var h_topBar = ef*0.1;
 $(".blackC_t").css("width",ef+"px");
 $(".blackC_t").css("height",h_topBar+"px");
 $(".topbar").css("width",ef+"px");
-$(".topbar").css("height",w_topBar+"px");
+$(".topbar").css("height",h_topBar+"px");
 
 var w_topBnt = $("#topBtn").css("width");
 var _w_topBnf = parseFloat(w_topBnt.substring(0,e.length-2));
 $("#topBtn").css("height",(_w_topBnf/3.6)+"px");
 }
+
+
+function clickFI($this){
+  var  e = $this.css("left");
+  var _e = parseFloat(e.substring(0,e.length-2));
+  if(_e>=0)
+     $(".floatInfo:hover").css("left","-190px");
+  else
+     $(".floatInfo:hover").css("left","0%");
+  $this.css("transition","left 0.2s");
+  $this.css("-moz-transition","left 0.2s"); /* Firefox 4 */
+  $this.css("-webkit-transition","left 0.2s"); /* Safari and Chrome */
+  $this.css("-o-transition","left 0.2s"); /* Opera */ 
+  console.info("click...");
+  //$this.html($this.css("left"));
+}
+
 
 function cover(){
          $("#topBtn").css("color","#FFFFFF");
