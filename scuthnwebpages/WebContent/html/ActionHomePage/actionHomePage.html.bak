@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <title>华工xx同乡会</title>
   <link rel="stylesheet" type="text/css" href="../../css/ActionHomePage/style.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/public/grid-slider.css" />
   <script src="../../js/public/jquery-2.1.4.min.js"></script>
   <script src="../../js/ActionHomePage/script.js"></script>
   
@@ -115,7 +116,7 @@
 	       </span>
 		 </div>
 		 <div style="padding-left:18%;display:inline;">
-		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))"style="color:#00CCFF;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/homePage/homePage.html';">首页</div>&nbsp;&nbsp;&nbsp;
+		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))"style="color:#00CCFF;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/homepage/homepage.html';">首页</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/ActionHomePage/actionHomePage.html';">活动中心</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))">资讯</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))"style="color:#00CCFF;">登录</div>&nbsp;&nbsp;&nbsp;
@@ -169,6 +170,19 @@
            <span class="si">开启查看各种资源链接
 		</div>
 	 </div>
+	 <div id="slider1" class="grid-slider">
+					<ul class="gs-list" data-title="">            	                  	
+                     <li onclick="location.href='index.html';" data-src="http://pic.58pic.com/58pic/15/13/89/54j58PICJq5_1024.jpg">
+                         <a href="images/index/slider4.jpg"><img src="images/index/spacer.png" alt=""/></a>
+                         <div>一些文字</div>
+                     </li>
+                     <li onclick="location.href='index.html';" data-src="(http://pic.58pic.com/58pic/15/13/32/12s58PICynM_1024.jpg" data-colspan="2" data-rowspan="2" >
+                          <a href="images/index/slider2.jpg" ><img src="images/index/spacer.png" alt=""/></a>
+                     </li>                              
+                    </ul>
+                    
+	 </div>
+
 	 <hr id="sp" style="visibility:hidden;width:60%;">
      <div id="wechat" style="visibility:hidden;">
         <div>
