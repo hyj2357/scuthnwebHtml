@@ -115,10 +115,10 @@
 	       </span>
 		 </div>
 		 <div style="padding-left:18%;display:inline;">
-		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))">首页</div>&nbsp;&nbsp;&nbsp;
+		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))"style="color:#00CCFF;">首页</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;">活动中心</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))"style="color:#FF9900;">资讯</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))">登录</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))">资讯</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))"style="color:#00CCFF;">登录</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;">注册</div>&nbsp;&nbsp;&nbsp;
 		 </div>
 	  </div>

@@ -94,7 +94,7 @@
 
 <body style="text-align:center;">
  <div id="wrap" style="border-radius:8px;left:0px;top:0px;position:absolute;">
-  <div class="floatInfo" onclick="clickFI($(this));" onmouseover="ccr($(this));" onmouseout="cc($(this));">
+  <div class="floatInfo" onclick="clickFI($(this));" onmouseover="ccr($(this));" onmouseout="cc_1($(this));">
   </div>
   <div class="top">
     <div class="fillContent" style="background-size: 100% auto;background-repeat: no-repeat;">
@@ -116,7 +116,7 @@
 		 </div>
 		 <div style="padding-left:18%;display:inline;">
 		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))">首页</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;">活动中心</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/ActionHomePage/actionHomePage.html';">活动中心</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))"style="color:#FF9900;">资讯</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))">登录</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;">注册</div>&nbsp;&nbsp;&nbsp;
