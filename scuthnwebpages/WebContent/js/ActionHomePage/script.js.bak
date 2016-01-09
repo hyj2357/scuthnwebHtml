@@ -85,10 +85,10 @@ function clickFI($this){
 
 function cover(){
          $("#topBtn").css("color","#FFFFFF");
-         $("#topBtn").css("background-color","#FF9900");
+         $("#topBtn").css("background-color","#00CCFF");
 }
 function cout(){
-		 $("#topBtn").css("color","#FF9900");
+		 $("#topBtn").css("color","#00CCFF");
          $("#topBtn").css("background-color","");
 }
 
