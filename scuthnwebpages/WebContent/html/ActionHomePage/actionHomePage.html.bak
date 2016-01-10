@@ -147,42 +147,8 @@
   </div>
 
   <div id="v" style="position:absolute;left:0px;top:72%;width:100%;height:100%;background-color:#FFFFFF;">
-     <div class="intro">
-	    <img id="introimgf" style="max-width:100%;width:5%;" src="../../image/homepage/u28.png"/>
-		<div style="font-family:微软雅黑;color:#00CCFF;" onmouseover="addMediaf($(this));" onmouseout="removeMedia($(this));">
-		   <span class="bi"><strong>同乡会活动</strong></span><br/>
-           <span class="si">查看并加入近期同乡会开启的各种活动
-		</div>
+     <div id="title1" style="border-style:solid;border-color:#FFFFFF;border-radius:18px;border-width:15px 0px 0px 0px;width:100%;height:100px;background-color:#FF9900;">
 	 </div>
-	 <hr style="width:60%;">
-	 <div class="intro">
-	    <img id="introimgs" style="max-width:100%;width:5%;" src="../../image/homepage/u34.png"/>
-		<div style="font-family:微软雅黑;color:#CCFF00;" onmouseover="addMedias($(this));" onmouseout="removeMedia($(this));">
-		   <span class="bi"><strong>同乡会资讯</strong></span><br/>
-           <span class="si">开启查看同乡会近期各种资讯
-		</div>
-	 </div>
-	 <hr style="width:60%;">
-	 <div class="intro">
-	    <img id="introimgt" style="max-width:100%;width:5%;" src="../../image/homepage/u40.png"/>
-		<div style="font-family:微软雅黑;color:#FF9900;" onmouseover="addMediat($(this));" onmouseout="removeMedia($(this));">
-		   <span class="bi"><strong>资源共享</strong></span><br/>
-           <span class="si">开启查看各种资源链接
-		</div>
-	 </div>
-	 <div id="slider1" class="grid-slider">
-					<ul class="gs-list" data-title="">            	                  	
-                     <li onclick="location.href='index.html';" data-src="http://pic.58pic.com/58pic/15/13/89/54j58PICJq5_1024.jpg">
-                         <a href="images/index/slider4.jpg"><img src="images/index/spacer.png" alt=""/></a>
-                         <div>一些文字</div>
-                     </li>
-                     <li onclick="location.href='index.html';" data-src="(http://pic.58pic.com/58pic/15/13/32/12s58PICynM_1024.jpg" data-colspan="2" data-rowspan="2" >
-                          <a href="images/index/slider2.jpg" ><img src="images/index/spacer.png" alt=""/></a>
-                     </li>                              
-                    </ul>
-                    
-	 </div>
-
 	 <hr id="sp" style="visibility:hidden;width:60%;">
      <div id="wechat" style="visibility:hidden;">
         <div>
