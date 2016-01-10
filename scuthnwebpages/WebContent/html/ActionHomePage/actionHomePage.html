@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />  <!-- 移动端用户不可缩放页面 -->
   <title>华工xx同乡会</title>
   <link rel="stylesheet" type="text/css" href="../../css/ActionHomePage/style.css" />
   <link rel="stylesheet" type="text/css" href="../../css/public/grid-slider.css" />
@@ -47,7 +47,7 @@
 			$("#topLogo").css("display","block");
 		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
 	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
-		 }else{
+		 }else{                                             //移动端访问页面格局自适应
 			$(".top").css("box-shadow","0px 0px 0px 0px");
             $("#introimgf").css("width","15%");
             $("#introimgs").css("width","15%");
@@ -66,9 +66,10 @@
 	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
 			$("#foot").css("visibility","hidden");
 			$("hr").css("visibility","hidden");
-
-            $("#sp").css("visibility","visible");
-            $("#wechat").css("visibility","visible");
+            $(".floatInfo").css("display","none");    //隐藏浮动微信二维码
+            
+            $("#sp").css("display","block");
+            $("#wechat").css("display","block");
 		 }
 
 		 $(".top").css("width",_w);
@@ -148,9 +149,14 @@
 
   <div id="v" style="position:absolute;left:0px;top:72%;width:100%;height:100%;background-color:#FFFFFF;">
      <div id="title1" style="border-style:solid;border-color:#FFFFFF;border-width:15px 0px 0px 0px;width:100%;height:100px;background-color:#FF9900;">
+	     <img src="http://139.129.24.81:8082/scuthnhtml/image/ActionHomePage/relax1.jpg" style="height:100%;vertical-align:middle;"/>
+		 <span class="si" style="font-family:微软雅黑;color:#FFFFFF;padding: 0% 10% 0% 10%;">
+		     <strong>近期活动</strong>
+		 </span>
+         <img src="http://139.129.24.81:8082/scuthnhtml/image/ActionHomePage/swim.jpg" style="vertical-align:middle;"/>
 	 </div>
-	 <hr id="sp" style="visibility:hidden;width:60%;">
-     <div id="wechat" style="visibility:hidden;">
+	 <hr id="sp" style="display:none;width:60%;">
+     <div id="wechat" style="display:none;">
         <div>
 	       <img src="http://139.129.24.81:8082/scuthnhtml/image/homepage/w3.jpeg">
 	    </div>
