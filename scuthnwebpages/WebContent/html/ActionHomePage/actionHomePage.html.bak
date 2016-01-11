@@ -161,22 +161,62 @@
 	 <div id="actions" style="text-align:center;padding:10% 0% 3% 0%;">
 	       <img style="border-radius:6px;box-shadow:0px 0px 8px 0px;width:80%;max-width:80%;"src="../../image/ActionHomePage/u66.jpg"/>
 	 </div>
-	 <div id="actsList" style="text-align:center;padding:0% 0% 5% 0%;">
+	 <div id="actsList" style="text-align:center;padding:0% 0% 5% 0%;font-family:微软雅黑;">
 	    <span class="si" style="color:#FF9900">
 		   <strong>全部活动</strong>
 		</span>
 		<div id="actsListsContent">
 	      <ul style="list-style:none;">
-		     <li>同乡会出游活动</li>
-             <li>清补凉DIY</li>
-             <li>创新创业</li>
-             <li>考研经验专题会</li>
-             <li>ACM经验专题会</li>
-		     <li>四叶草运动会</li>
-             <li>同乡会实习经验专题会</li>
-             <li>同乡会科技竞赛组队沙龙</li>
-             <li>同乡会技术团队招新</li>
-             <li>阿拉阿拉阿拉阿拉阿拉</li>
+		     <li>
+			    <div style="padding:0px 0px 5px 0px;">
+				    同乡会出游活动
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+                   清补凉DIY
+				</div>
+			 </li>
+             <li>
+			    <div style="padding:0px 0px 5px 0px;">
+   			       创新创业
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       考研经验专题会
+				</div>
+			 </li>
+             <li>
+			    <div style="padding:0px 0px 5px 0px;">
+   			       ACM经验专题会
+				</div>
+			 </li>
+		     <li>
+			    <div style="padding:0px 0px 5px 0px;">
+   			       四叶草运动会
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       同乡会实习经验专题会
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       同乡会科技竞赛组队沙龙
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       同乡会技术团队招新
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       阿拉阿拉阿拉阿拉阿拉
+				</div>
+			 </li>
 		  </ul>
 	   </div>
 	 </div>

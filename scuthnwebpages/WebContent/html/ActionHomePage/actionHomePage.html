@@ -17,6 +17,7 @@
                  window.setTimeout("ctop();",200);
         } 
 	 //}
+	 /**
 	 window.onload=function(){
 		 var w=window.innerWidth
          || document.documentElement.clientWidth
@@ -92,7 +93,7 @@
 		 $("#foot").css("width",_w);		 
 		 $("#foot").css("height",_w/4);
 		 
-	 }
+	 }**/
   </script>    
 
 </head>
@@ -167,16 +168,56 @@
 		</span>
 		<div id="actsListsContent">
 	      <ul style="list-style:none;">
-		     <li>同乡会出游活动</li>
-             <li>清补凉DIY</li>
-             <li>创新创业</li>
-             <li>考研经验专题会</li>
-             <li>ACM经验专题会</li>
-		     <li>四叶草运动会</li>
-             <li>同乡会实习经验专题会</li>
-             <li>同乡会科技竞赛组队沙龙</li>
-             <li>同乡会技术团队招新</li>
-             <li>阿拉阿拉阿拉阿拉阿拉</li>
+		     <li>
+			    <div style="padding:0px 0px 5px 0px;">
+				    同乡会出游活动
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+                   清补凉DIY
+				</div>
+			 </li>
+             <li>
+			    <div style="padding:0px 0px 5px 0px;">
+   			       创新创业
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       考研经验专题会
+				</div>
+			 </li>
+             <li>
+			    <div style="padding:0px 0px 5px 0px;">
+   			       ACM经验专题会
+				</div>
+			 </li>
+		     <li>
+			    <div style="padding:0px 0px 5px 0px;">
+   			       四叶草运动会
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       同乡会实习经验专题会
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       同乡会科技竞赛组队沙龙
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       同乡会技术团队招新
+				</div>
+			 </li>
+             <li>
+			 	<div style="padding:0px 0px 5px 0px;">
+   			       阿拉阿拉阿拉阿拉阿拉
+				</div>
+			 </li>
 		  </ul>
 	   </div>
 	 </div>
@@ -225,4 +266,79 @@
  </div>
 </body>
 
+<script type="text/javascript">
+   		 var w=window.innerWidth
+         || document.documentElement.clientWidth
+         || document.body.clientWidth;
+         var _w = parseInt(w);
+         
+            var userAgentInfo = navigator.userAgent; 
+            var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"); 
+            var flag = true; 
+            for (var v = 0; v < Agents.length; v++) { 
+                if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; } 
+            }      
+
+		 if(_w>1200 && flag){
+		   var v = (_w -1200)/2;
+		   _w = 1200;
+		   $("#wrap").css("margin-left",v+"px");
+           $("#wrap").css("margin-right",v+"px");
+		 }else if(_w<786 && flag){
+			$("#topLogo").css("display","block");
+		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
+	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
+		 }else if(_w<400 && flag){
+			//$("body").css("background-color","#FFFFFF");
+            $(".blackC_t").css("visibility","hidden");			
+            $(".topbar").css("visibility","hidden");
+			//$(".fillContent").css("background-image","url()");
+			$("#topLogo").css("display","block");
+		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
+	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
+		 }else{                                             //移动端访问页面格局自适应
+			$(".top").css("box-shadow","0px 0px 0px 0px");
+            $("#introimgf").css("width","15%");
+            $("#introimgs").css("width","15%");
+            $("#introimgt").css("width","15%");
+            $("#logoimg").css("height","25%");
+
+			$("#content").css("left","5%");
+            $("#content").css("margin-top","10%");
+			$(".xbi").css("font-size","0.6em");
+			$("body").css("background-color","#FFFFFF");
+            $(".blackC_t").css("visibility","hidden");			
+            $(".topbar").css("visibility","hidden");
+
+			$(".floatInfo").css("display","none");     //移动端隐藏浮动微信二维码
+
+			//$(".fillContent").css("background-image","url()");
+			$("#topLogo").css("display","block");
+		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
+	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
+			$("#foot").css("visibility","hidden");
+			$("hr").css("visibility","hidden");
+            $(".floatInfo").css("display","none");    //隐藏浮动微信二维码
+            
+            $("#sp").css("display","block");
+            $("#wechat").css("display","block");
+		 }
+
+		 $(".top").css("width",_w);
+		 $(".top").css("height",_w*0.5);
+
+         $(".blackC_t").css("width",_w);
+         $(".blackC_t").css("height",_w*0.1);
+		 $(".topbar").css("width",_w);		 
+		 $(".topbar").css("height",_w*0.1);
+		 
+		 $("#v").css("top",_w*0.5);
+		 $("#v").css("height",_w*2);
+         $("#v").css("width",_w);
+
+         var _w_foot = _w*2+_w*0.5;
+		 $("#foot").css("top",_w_foot);
+		 $("#foot").css("width",_w);		 
+		 $("#foot").css("height",_w/4);
+</script>
 </html>
