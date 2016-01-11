@@ -60,6 +60,9 @@
 			$("body").css("background-color","#FFFFFF");
             $(".blackC_t").css("visibility","hidden");			
             $(".topbar").css("visibility","hidden");
+
+			$(".floatInfo").css("display","none");     //移动端隐藏浮动微信二维码
+
 			//$(".fillContent").css("background-image","url()");
 			$("#topLogo").css("display","block");
 		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
@@ -81,10 +84,10 @@
 		 $(".topbar").css("height",_w*0.1);
 		 
 		 $("#v").css("top",_w*0.5);
-		 $("#v").css("height",_w*1);
+		 $("#v").css("height",_w*2);
          $("#v").css("width",_w);
 
-         var _w_foot = _w*1+_w*0.5;
+         var _w_foot = _w*2+_w*0.5;
 		 $("#foot").css("top",_w_foot);
 		 $("#foot").css("width",_w);		 
 		 $("#foot").css("height",_w/4);
@@ -148,12 +151,41 @@
   </div>
 
   <div id="v" style="position:absolute;left:0px;top:72%;width:100%;height:100%;background-color:#FFFFFF;">
-     <div id="title1" style="border-style:solid;border-color:#FFFFFF;border-width:15px 0px 0px 0px;width:100%;height:100px;background-color:#FF9900;">
-	     <img src="http://139.129.24.81:8082/scuthnhtml/image/ActionHomePage/relax1.jpg" style="height:100%;vertical-align:middle;"/>
+     <div id="title1" style="border-style:solid;border-color:#FFFFFF;border-width:15px 0px 0px 0px;width:100%;height:5%;background-color:#FF9900;">
+	     <img src="http://139.129.24.81:8082/scuthnhtml/image/ActionHomePage/relax1.jpg" style="width:10%;height:100%;max-width:10%;vertical-align:middle;"/>
 		 <span class="si" style="font-family:微软雅黑;color:#FFFFFF;padding: 0% 10% 0% 10%;">
 		     <strong>近期活动</strong>
 		 </span>
-         <img src="http://139.129.24.81:8082/scuthnhtml/image/ActionHomePage/swim.jpg" style="vertical-align:middle;"/>
+         <img src="http://139.129.24.81:8082/scuthnhtml/image/ActionHomePage/swim.jpg" style="width:8%;height:60%;max-width:8%;vertical-align:middle;"/>
+	 </div>
+	 <div id="actions" style="text-align:center;padding:10% 0% 3% 0%;">
+	       <img style="border-radius:6px;box-shadow:0px 0px 8px 0px;width:80%;max-width:80%;"src="../../image/ActionHomePage/u66.jpg"/>
+	 </div>
+	 <div id="actsList" style="text-align:center;padding:0% 0% 5% 0%;">
+	    <span class="si" style="color:#FF9900">
+		   <strong>全部活动</strong>
+		</span>
+		<div id="actsListsContent">
+	      <ul style="text-align:center;list-style:none;">
+		     <li>同乡会出游活动</li>
+             <li>清补凉DIY</li>
+             <li>创新创业</li>
+             <li>考研经验专题会</li>
+             <li>ACM经验专题会</li>
+		     <li>四叶草运动会</li>
+             <li>同乡会实习经验专题会</li>
+             <li>同乡会科技竞赛组队沙龙</li>
+             <li>同乡会技术团队招新</li>
+             <li>阿拉阿拉阿拉阿拉阿拉</li>
+		  </ul>
+	   </div>
+	 </div>
+	 <div id="title2" style="border-style:solid;border-color:#FFFFFF;border-width:15px 0px 0px 0px;width:100%;height:5%;background-color:#FF9900;">
+	     <img src="../../image/ActionHomePage/dopin.jpg" style="width:10%;height:70%;max-width:10%;vertical-align:middle;"/>
+		 <span class="si" style="font-family:微软雅黑;color:#FFFFFF;padding: 0% 10% 0% 10%;">
+		     <strong>活动相册</strong>
+		 </span>
+         <img src="../../image/ActionHomePage/shark.jpg" style="width:8%;height:60%;max-width:8%;vertical-align:middle;"/>
 	 </div>
 	 <hr id="sp" style="display:none;width:60%;">
      <div id="wechat" style="display:none;">

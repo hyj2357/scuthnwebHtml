@@ -48,9 +48,9 @@ $(".top").css("height",df+"px");
 var top = df;
 $("#v").css("top",top+"px");
 $("#v").css("width",ef+"px");
-$("#v").css("height",(ef*1)+"px");
+$("#v").css("height",(ef*2)+"px");
 
-top += ef;
+top += (ef*1.5);
 $("#foot").css("top",top+"px");
 $("#foot").css("width",ef+"px");
 $("#foot").css("height",(ef/4)+"px");
@@ -85,10 +85,10 @@ function clickFI($this){
 
 function cover(){
          $("#topBtn").css("color","#FFFFFF");
-         $("#topBtn").css("background-color","#00CCFF");
+         $("#topBtn").css("background-color","#FF9900");
 }
 function cout(){
-		 $("#topBtn").css("color","#00CCFF");
+		 $("#topBtn").css("color","#FF9900");
          $("#topBtn").css("background-color","");
 }
 

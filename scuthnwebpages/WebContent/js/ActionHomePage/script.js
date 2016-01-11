@@ -48,9 +48,9 @@ $(".top").css("height",df+"px");
 var top = df;
 $("#v").css("top",top+"px");
 $("#v").css("width",ef+"px");
-$("#v").css("height",(ef*1)+"px");
+$("#v").css("height",(ef*2)+"px");
 
-top += ef;
+top += (ef*2);
 $("#foot").css("top",top+"px");
 $("#foot").css("width",ef+"px");
 $("#foot").css("height",(ef/4)+"px");
