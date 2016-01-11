@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />  <!-- 移动端用户不可缩放页面 -->
   <title>华工xx同乡会</title>
   <link rel="stylesheet" type="text/css" href="../../css/ActionHomePage/style.css" />
   <link rel="stylesheet" type="text/css" href="../../css/public/grid-slider.css" />
