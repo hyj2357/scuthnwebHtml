@@ -16,6 +16,7 @@
                  window.setTimeout("ctop();",200);
         } 
 	 //}
+	 /**
 	 window.onload=function(){
 		 var w=window.innerWidth
          || document.documentElement.clientWidth
@@ -90,7 +91,7 @@
 		 $("#foot").css("width",_w);		 
 		 $("#foot").css("height",_w/4);
 		 
-	 }
+	 }**/
   </script>    
 
 </head>
@@ -210,4 +211,78 @@
  </div>
 </body>
 
+<script type="text/javascript">
+		 var w=window.innerWidth
+         || document.documentElement.clientWidth
+         || document.body.clientWidth;
+         var _w = parseInt(w);
+         
+            var userAgentInfo = navigator.userAgent; 
+            var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"); 
+            var flag = true; 
+            for (var v = 0; v < Agents.length; v++) { 
+                if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; } 
+            }      
+
+		 if(_w>1200 && flag){
+		   var v = (_w -1200)/2;
+		   _w = 1200;
+		   $("#wrap").css("margin-left",v+"px");
+           $("#wrap").css("margin-right",v+"px");
+		 }else if(_w<786 && flag){
+			$("#topLogo").css("display","block");
+		   	$("#topBtn").css("visibility","hidden");    //³ß´ç¹ýµÍÒþ²Ø°´Å¥
+	        $("#otherContent").css("visibility","hidden");   //³ß´ç¹ýµÍÒþ²ØÄÚÈÝ
+		 }else if(_w<400 && flag){
+			//$("body").css("background-color","#FFFFFF");
+            $(".blackC_t").css("visibility","hidden");			
+            $(".topbar").css("visibility","hidden");
+			//$(".fillContent").css("background-image","url()");
+			$("#topLogo").css("display","block");
+		   	$("#topBtn").css("visibility","hidden");    //³ß´ç¹ýµÍÒþ²Ø°´Å¥
+	        $("#otherContent").css("visibility","hidden");   //³ß´ç¹ýµÍÒþ²ØÄÚÈÝ
+		 }else{
+			$(".top").css("box-shadow","0px 0px 0px 0px");
+            $("#introimgf").css("width","15%");
+            $("#introimgs").css("width","15%");
+            $("#introimgt").css("width","15%");
+            $("#logoimg").css("height","25%");
+
+			$("#content").css("left","5%");
+            $("#content").css("margin-top","10%");
+			$(".xbi").css("font-size","0.6em");
+			$("body").css("background-color","#FFFFFF");
+            $(".blackC_t").css("visibility","hidden");			
+            $(".topbar").css("visibility","hidden");
+
+            $(".floatInfo").css("display","none");     //ÒÆ¶¯¶ËÒþ²Ø¸¡¶¯Î¢ÐÅ¶þÎ¬Âë
+
+			//$(".fillContent").css("background-image","url()");
+			$("#topLogo").css("display","block");
+		   	$("#topBtn").css("visibility","hidden");    //³ß´ç¹ýµÍÒþ²Ø°´Å¥
+	        $("#otherContent").css("visibility","hidden");   //³ß´ç¹ýµÍÒþ²ØÄÚÈÝ
+			$("#foot").css("visibility","hidden");
+			$("hr").css("visibility","hidden");
+
+            $("#sp").css("visibility","visible");
+            $("#wechat").css("visibility","visible");
+		 }
+
+		 $(".top").css("width",_w);
+		 $(".top").css("height",_w*0.5);
+
+         $(".blackC_t").css("width",_w);
+         $(".blackC_t").css("height",_w*0.1);
+		 $(".topbar").css("width",_w);		 
+		 $(".topbar").css("height",_w*0.1);
+		 
+		 $("#v").css("top",_w*0.5);
+		 $("#v").css("height",_w*1);
+         $("#v").css("width",_w);
+
+         var _w_foot = _w*1+_w*0.5;
+		 $("#foot").css("top",_w_foot);
+		 $("#foot").css("width",_w);		 
+		 $("#foot").css("height",_w/4);
+</script>
 </html>

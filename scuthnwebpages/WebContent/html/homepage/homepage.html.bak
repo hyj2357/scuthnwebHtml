@@ -16,6 +16,7 @@
                  window.setTimeout("ctop();",200);
         } 
 	 //}
+	 /**
 	 window.onload=function(){
 		 var w=window.innerWidth
          || document.documentElement.clientWidth
@@ -60,7 +61,7 @@
             $(".blackC_t").css("visibility","hidden");			
             $(".topbar").css("visibility","hidden");
 
-            $(".floatInfo").css("display","none");
+            $(".floatInfo").css("display","none");     //ÒÆ¶¯¶ËÒþ²Ø¸¡¶¯Î¢ÐÅ¶þÎ¬Âë
 
 			//$(".fillContent").css("background-image","url()");
 			$("#topLogo").css("display","block");
@@ -90,7 +91,7 @@
 		 $("#foot").css("width",_w);		 
 		 $("#foot").css("height",_w/4);
 		 
-	 }
+	 }**/
   </script>    
 
 </head>
