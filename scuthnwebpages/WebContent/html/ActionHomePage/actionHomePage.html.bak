@@ -166,7 +166,7 @@
 		   <strong>全部活动</strong>
 		</span>
 		<div id="actsListsContent">
-	      <ul style="text-align:center;list-style:none;">
+	      <ul style="list-style:none;">
 		     <li>同乡会出游活动</li>
              <li>清补凉DIY</li>
              <li>创新创业</li>
