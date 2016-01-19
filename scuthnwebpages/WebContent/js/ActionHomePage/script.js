@@ -15,7 +15,7 @@ var df = parseFloat(d.substring(0,d.length-2));
 var r = ef/df;
 var before_ef = ef;
 ef = parseInt(w);
-if(ef>1200)          //Èç¹û³ß´çÔÚ1000pxÒÔÉÏ,Í£Ö¹±ä»¯,²¢ÇÒÁ½±ßÁô°×.
+if(ef>1200)          //ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½1000pxï¿½ï¿½ï¿½ï¿½,Í£Ö¹ï¿½ä»¯,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 {
 	var v = (ef - 1200)/2;
 	$("#wrap").css("margin-left",v+"px");
@@ -24,14 +24,14 @@ if(ef>1200)          //Èç¹û³ß´çÔÚ1000pxÒÔÉÏ,Í£Ö¹±ä»¯,²¢ÇÒÁ½±ßÁô°×.
 	$("#topLogo").css("display","inline");
 	$("#topBtn").css("visibility","visible");    
 	$("#otherContent").css("visibility","visible");
-	ef = 1200;    //¹Ì¶¨¿í¶ÈÎª1200px
+	ef = 1200;    //ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½Îª1200px
 }else if(ef<900){
     $("#wrap").css("margin-left",0+"px");
     $("#wrap").css("margin-right",0+"px"); 
 
 	$("#topLogo").css("display","block");
-	$("#topBtn").css("visibility","hidden");    //³ß´ç¹ıµÍÒş²Ø°´Å¥
-	$("#otherContent").css("visibility","hidden");   //³ß´ç¹ıµÍÒş²ØÄÚÈİ
+	$("#topBtn").css("visibility","hidden");    //ï¿½ß´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø°ï¿½Å¥
+	$("#otherContent").css("visibility","hidden");   //ï¿½ß´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 }else{
 	$("#wrap").css("margin-left",0+"px");
     $("#wrap").css("margin-right",0+"px");
@@ -200,6 +200,22 @@ function cc_1($this){
     $this.css("color","#000000");
 }
 
+function cbcr($this){
+    $this.css("background-color","#FF9900");
+}
+
+function cbcg($this){
+    $this.css("background-color","#CCFF00");
+}
+
+function cbcb($this){
+    $this.css("background-color","#00CCFF");
+}
+
+function cbc($this){
+    $this.css("background-color","#FFFFFF");
+}
+
 function afs($this){
     var _size = $this.css("font-size");
     var s = parseInt(_size.substring(0,(_size.length-2)));
@@ -212,4 +228,16 @@ function rollback($this){
     var s = parseInt(_size.substring(0,(_size.length-2)));
     s -= 6;
     $this.css("font-size",s+"px");  
+}
+
+function msonAction($this){
+	$(".action:hover").css("box-shadow","0px 0px 8px 0px");	
+	$this.css("transition","box-shadow 0.2s");
+	$this.css("-moz-transition","box-shadow 0.2s"); /* Firefox 4 */
+	$this.css("-webkit-transition","box-shadow 0.2s"); /* Safari and Chrome */
+	$this.css("-o-transition","box-shadow 0.2s"); /* Opera */ 
+}
+
+function msoutAction($this){
+	$this.css("box-shadow","0px 0px 0px 0px");	
 }
