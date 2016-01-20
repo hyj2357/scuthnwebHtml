@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="../../../css/ActionHomePage/style.css" />
   <script src="../../../js/public/jquery-2.1.4.min.js"></script>
   <script src="../../../js/ActionHomePage/singleActionInfo/singleActionInfoScript.js"></script>
+  <script src="../../../js/ActionHomePage/script.js"></script>  
   <script type="text/javascript">
   
   window.onresize=function(){
@@ -19,16 +20,23 @@
  		 var v = (_w -1200)/2;
  		 _w = 1200;
  		 $("#wrap").css("width","1200px");
- 		 $("#wrap").css("margin-left",v+"px");
-          $("#wrap").css("margin-right",(v-8)+"px");
-          $(".blackC_t").css("width","1200px");
-          $("#tbar").css("width","1200px"); 
+ 		 $("#wrap").css("margin-left",(v-8)+"px");
+         $("#wrap").css("margin-right",(_w+v-8)+"px");
+         
+         $(".blackC_t").css("width","1200px");
+         $(".blackC_t").css("height","120px");         
+         $("#tbar").css("width","1200px"); 
+         $("#tbar").css("height","120px"); 
+         
       }else{
  		 $("#wrap").css("width","100%");
- 		 $("#wrap").css("margin-left",0+"px");
-          $("#wrap").css("margin-right",-8+"px");
-          $(".blackC_t").css("width",_w+"px");
-          $("#tbar").css("width",_w+"px");
+ 		 $("#wrap").css("margin-left",-8+"px");
+         //$("#wrap").css("margin-right",-8+"px");
+         
+         $(".blackC_t").css("width",_w+"px");
+         $(".blackC_t").css("height",(_w*0.1)+"px");
+         $("#tbar").css("width",_w+"px");
+         $("#tbar").css("height",(_w*0.1)+"px");
       }
   }
   </script>
@@ -36,11 +44,11 @@
 
 <body style="width:100%;height:100%;background-color:#FF9900;">
    <div id="wrap" style="width:100%;margin-top:-8px;margin-left:-8px;height:100%;">
-   	 <div class="blackC_t" style="min-height:60px;">
+   	 <div class="blackC_t">
 	 </div>
-     <div id="tbar" class="topbar" style="min-height:60px;">
+     <div id="tbar" class="topbar">
 	  <div style="display:inline;">
-	     <img style="max-width:8.296%;max-height:80%;vertical-align: middle;width:8.296%;height:80%;min-height:60px;" src="../../../image/homepage/u6.png"/>
+	     <img style="max-width:8.296%;max-height:80%;vertical-align: middle;width:8.296%;height:80%;" src="../../../image/homepage/u6.png"/>
 	  </div>
 	  <div style="font-family:微软雅黑;color:#FF9900;display:inline;">
 	     <div style="display:inline;">
@@ -98,7 +106,53 @@
        和同乡会的小伙伴们一起出游吧！
               </span>
            </div>
+           <div id="actionInfo" style="font-family:微软雅黑;">
+              <ul style="list-style:none;">
+                <li>
+                   <div>
+                     <span><strong>活动开始时间:2015-12-15 08:00</strong></span>&nbsp;&nbsp;
+                     <span><strong>活动结束时间:2015-12-15 18:00</strong></span>
+                   </div>
+                </li><br/>
+                <li>
+                   <div>
+                     <span><strong>活动报名开始时间:2015-12-01 00:00</strong></span>&nbsp;&nbsp;
+                     <span><strong>活动报名结束时间:2015-12-15 08:00</strong></span>
+                   </div>               
+                </li><br/>
+                <li>
+                   <div>
+                     <span><strong>活动地点:大夫山</strong></span>&nbsp;&nbsp;
+                     <span><strong>活动当前状态:报名中</strong></span>
+                   </div>
+                </li><br/>
+              </ul>
+           </div>
+           <div style="cursor:pointer;background-color:#CCFF00;color:#666666;width:10%;border-radius:3px;margin-left:45%;" onmouseover="cbc($(this));ccg($(this));" onmouseout="cbcg($(this));ccG($(this));">
+              <span style="font-size:1em;font-family:微软雅黑;">
+                <strong>我要参加！</strong>
+              </span>
+           </div><br/><br/><br/>
        </div>      
+     </div>
+     <div id="foot" style="font-family:微软雅黑;border-radius:6px;margin-top:-5%;box-shadow: 0px 0px 18px 0px;width:100%;height:30%;background-color:#CCCCCC;left:0px;bottom:0px;">   
+       <div style="font-family:微软雅黑;margin-top:5%;">  
+	     <div>
+	        <a target="_blank" href="#"><span class="si">联系我们</span></a>
+	     </div><br/>
+	     <div style="font-family:微软雅黑;display:inline;">
+		      <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">首页</span></div>&nbsp;&nbsp;&nbsp;
+              <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">活动</span></div>&nbsp;&nbsp;&nbsp;
+              <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">资讯</span></div>&nbsp;&nbsp;&nbsp;
+              <div class="barEl" onmouseover="cc($(this))" onmouseout="ccB($(this))"><span class="si">管理员中心</span></div>&nbsp;&nbsp;&nbsp;
+	     </div><br/>
+	     <div>
+	          <a target="_blank" href="http://www.scut.edu.cn/"><span style="color:#999999;" class="xsi">友情链接:华南理工大学官网</span></a>
+	     </div><br/>
+	     <div>
+	        <span class="xsi">备案信息:xxxxxxxxxxxxxxxxxxxxxx</span>
+	     </div>
+	   </div>
      </div>
    </div>   
 </body>
@@ -113,16 +167,16 @@
 		 var v = (_w -1200)/2;
 		 _w = 1200;
 		 $("#wrap").css("width","1200px");
-		 $("#wrap").css("margin-left",v+"px");
-         $("#wrap").css("margin-right",(v-8)+"px");
+		 $("#wrap").css("margin-left",(v-8)+"px");
+         $("#wrap").css("margin-right",(_w+v-8)+"px");
          $(".blackC_t").css("width","1200px");
          $(".blackC_t").css("height",_w*0.1);
          $("#tbar").css("width","1200px"); 
          $("#tbar").css("height",_w*0.1);
 	 }else{
 		 $("#wrap").css("width","100%");
-		 $("#wrap").css("margin-left",0+"px");
-         $("#wrap").css("margin-right",-8+"px");
+		 $("#wrap").css("margin-left",-8+"px");
+         //$("#wrap").css("margin-right",_w+"px");
          
          $(".blackC_t").css("width",_w+"px");
          $(".blackC_t").css("height",_w*0.1);

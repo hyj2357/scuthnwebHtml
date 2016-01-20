@@ -186,11 +186,12 @@ function ccg($this){
 }
 function ccb($this){
      $this.css("color","#00CCFF");
-
 }
 function ccB($this){
      $this.css("color","#000000");
-
+}
+function ccG($this){
+    $this.css("color","#666666");
 }
 function cc($this){
     $this.css("color","#FFFFFF");
