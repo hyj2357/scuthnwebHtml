@@ -120,15 +120,15 @@
 		 </div>
 		 <div style="padding-left:18%;display:inline;">
 		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/homepage/homepage.html';">首页</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/ActionHomePage/actionHomePage.html';">活动中心</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))"style="color:#FF9900;">资讯</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))">登录</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;">注册</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))" style="color:#CCFF00;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/ActionHomePage/actionHomePage.html';">活动中心</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))" style="color:#FF9900;">资讯</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))" >登录</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))" onclick="window.location = '../register/register.html';" style="color:#CCFF00;">注册</div>&nbsp;&nbsp;&nbsp;
 		 </div>
 	  </div>
     </div>
     
-	<div id="content" style="position:absolute;Z-index:99;margin-top:15%;left:18%;color:#00CCFF;font-size:2.5em;font-family:华文楷体;">
+	<div id="content" style="position:absolute;Z-index:99;margin-top:15%;left:18%;color:#00CCFF;font-size:2.5em;">
 	       <div id="topLogo" style="display:inline;">
 		     <img id="logoimg" style="max-width:100%;max-height:100%;vertical-align:middle;width:20%;height:20%;" src="../../image/homepage/u6.png"/>
 		   </div>
@@ -138,7 +138,7 @@
 		   <span id="otherContent" class="xsi" style="font-family:微软雅黑;color:#E4E4E4;">
 		     <strong>加入华工XX同乡会,和我们一起成长吧!</strong>
 		   </span>
-		   <div id="topBtn" style="height:3em;width:30%;border-width:0.1em;cursor:pointer;border-color:#00CCFF;border-style:solid;border-radius:19px;font-size:0.5em;color:#00CCFF;margin-left:auto;margin-right:auto;margin-top:2%;" onmousemove="cover();" onmouseout="cout();" onclick="var pos = $('#v').offset().top;$('html,body').animate({ scrollTop: pos },400);">
+		   <div id="topBtn" style="height:3em;width:30%;border-width:0.1em;cursor:pointer;border-color:#00CCFF;border-style:solid;border-radius:19px;font-size:0.5em;color:#00CCFF;margin-left:auto;margin-right:auto;margin-top:2%;" onmousemove="cover();" onmouseout="cout();" onclick="var pos = $('#v').offset().top;$('html,body').animate({ scrollTop: pos },300);">
 		     <div style="padding-top:8%;">
 		        <span class="xsi" style="font-family:微软雅黑;">
 			      <strong>进入主题看看</strong>
@@ -241,7 +241,7 @@
 			$("#topLogo").css("display","block");
 		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
 	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
-		 }else{
+		 }else if(!flag){
 			$(".top").css("box-shadow","0px 0px 0px 0px");
             $("#introimgf").css("width","15%");
             $("#introimgs").css("width","15%");

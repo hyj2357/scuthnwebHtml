@@ -1,0 +1,7 @@
+@import "../public/font.css";
+@import "../ActionHomePage/singleActionInfo/joinInfoPageStyle.css";
+
+.barEl{
+   cursor:pointer;
+   display:inline;
+}
