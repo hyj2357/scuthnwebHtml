@@ -201,6 +201,10 @@ function cc_1($this){
     $this.css("color","#000000");
 }
 
+function cc_transparent($this){
+    $this.css("color","transparent");
+}
+
 function cbcr($this){
     $this.css("background-color","#FF9900");
 }
@@ -215,6 +219,10 @@ function cbcb($this){
 
 function cbc($this){
     $this.css("background-color","#FFFFFF");
+}
+
+function cbc_transparent($this){
+	$this.css("background-color","transparent");
 }
 
 function afs($this){

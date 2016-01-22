@@ -17,8 +17,8 @@
      <div id="v">
      	<form>
      		<span class="bi" style="color:#00CCFF;">
-     			<strong>邀请码注册</strong><br/>
-     			<a style="text-decoration:none;color:#FF9900;font-size:0.5em;" href="register.html">返回普通注册</a>    			
+     			<strong>新用户注册</strong><br/>
+     			<a style="text-decoration:none;color:#FF9900;font-size:0.5em;" href="inviteRegister.html">我有邀请码</a>
      		</span><br/><br/><br/>
      		
      		<span class="si" style="color:#CCFF00;">
@@ -27,20 +27,39 @@
      		<input class="inputTxt" type="text"/><br/><br/>
      		
      		<span class="si" style="color:#CCFF00;">
+     			<strong>真实姓名</strong>
+     		</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     		<input class="inputTxt" type="text"/><br/><br/>
+     		
+     		<span class="si" style="color:#CCFF00;">
+     			<strong>专业</strong>
+     		</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     		<input class="inputTxt" type="text"/><br/><br/>
+     		
+     		<span class="si" style="color:#CCFF00;">
+     			<strong>年级(如'2011')</strong>
+     		</span>&nbsp;
+     		<input class="inputTxt" type="text"/><br/><br/>
+     		
+     		<span class="si" style="color:#CCFF00;">
+     			<strong>验证邮箱</strong>
+     		</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     		<input class="inputTxt" type="text"/><br/><br/>
+     		
+     		<span class="si" style="color:#CCFF00;">
      			<strong>密码</strong>
      		</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     		<input class="inputTxt" type="password"/><br/><br/>
+     		<input class="inputTxt" type="text"/><br/><br/>
      		
      		<span class="si" style="color:#CCFF00;">
      			<strong>确认密码</strong>
      		</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     		<input class="inputTxt" type="password"/><br/><br/>
+     		<input class="inputTxt" type="text"/><br/><br/>
      		
      		<span class="si" style="color:#CCFF00;">
-     			<strong>邀请码</strong>
+     			<strong>验证码</strong>
      		</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
      		<input class="inputTxt" type="text"/><br/><br/><br/><br/>   
-     		
             <input class="bi" style="cursor:pointer;background-color:#FF9900;color:#FFFFFF;border-radius:6px;border:none;" onmouseover="cbc($(this));ccr($(this));" onmouseout="cbcr($(this));cc($(this));" type="submit" value="注册"/>     		  		
      	</form>
      </div><br/><br/><br/>
