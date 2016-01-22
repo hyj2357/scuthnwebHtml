@@ -7,30 +7,70 @@
   <title>登录</title>
   <!-- <link rel="stylesheet" type="text/css" href="../../css/ActionHomePage/style.css" /> -->
   <link rel="stylesheet" type="text/css" href="../../css/register/register.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/login/login.css" />
   <script src="../../js/public/jquery-2.1.4.min.js"></script>
   <script src="../../js/ActionHomePage/script.js"></script> 
-  <script type="text/javascript"></script> 
+  <script type="text/javascript">
+	  window.onresize = function(){
+		  var w=window.innerWidth
+          || document.documentElement.clientWidth
+          || document.body.clientWidth;
+          var _w = parseInt(w);
+	      $(".blackC_t").css("width",_w+"px");
+	      $(".blackC_t").css("height",(_w*0.1)+"px");
+          $("#tbar").css("width",_w+"px");
+          $("#tbar").css("height",(_w*0.1)+"px");	      
+	  }
+  </script> 
 </head>
 
 <body style="background-size:100% 100%;background-image:url(../../image/login/u1.jpg);background-size:100%;text-align:center;">
   <div id="wrap">
-     <div id="v">
+     <div>
+  	    <div class="blackC_t" style="left:-0px;top:-0px;">
+		</div>
+	    <div id="tbar" class="topbar">
+		  <div style="display:inline;">
+		     <img style="max-width:8.296%;max-height:80%;vertical-align: middle;width:8.296%;height:80%;" src="../../image/homepage/u6.png"/>
+		  </div>
+		  <div style="font-family:微软雅黑;color:#00CCFF;display:inline;">
+		     <div style="display:inline;">
+			   <span>
+		          <strong>华工xx同乡会</strong>
+		       </span>
+			 </div>
+			 <div style="padding-left:18%;display:inline;">
+			   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/homepage/homepage.html';">首页</div>&nbsp;&nbsp;&nbsp;
+	           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))" style="color:#CCFF00;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/ActionHomePage/actionHomePage.html';">活动中心</div>&nbsp;&nbsp;&nbsp;
+	           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))" style="color:#FF9900;">资讯</div>&nbsp;&nbsp;&nbsp;
+	           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))" onclick="window.location = '../login/login.html';">登录</div>&nbsp;&nbsp;&nbsp;
+	           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))" onclick="window.location = '../register/register.html';" style="color:#CCFF00;">注册</div>&nbsp;&nbsp;&nbsp;
+			 </div>
+		  </div>
+	     </div>
+	   </div>
+     <div id="v" style="padding-top:10%">
      	<form>
-     		<span class="xsbi" style="color:#FF9900;">
-     			<strong>账号登录</strong><br/>
+     		<span style="color:#FF9900;">
+     			<span class="xsbi">
+     				<strong>用户登录</strong><br/>
+     			</span>
+     			<span class="xbi" style="color:#CCFF00">
+     				tip.如果忘记用户名可以尝试真实姓名+年级(如'张伟2011')
+     			</span>
      		</span><br/><br/><br/>
      		
-     		<span class="bi" style="color:#000000;">
+     		<span class="bi" style="color:#FF9900;">
      			<strong>用户名</strong>
      		</span>&nbsp;&nbsp;
      		<input class="inputTxt" style="border:none;" type="text"/><br/><br/>
      		
-     		<span class="bi" style="color:#000000;">
+     		<span class="bi" style="color:#FF9900;">
      			<strong>密码</strong>
      		</span>&nbsp;&nbsp;&nbsp;&nbsp;
      		<input class="inputTxt"  style="border:none;" type="password"/><br/><br/>
      		
-     		<span class="bi" style="color:#000000;">
+     		<span class="bi" style="color:#FF9900;">
      			<strong>验证码</strong>
      		</span>&nbsp;&nbsp;
      		<input class="inputTxt" style="border:none;" type="text"/><br/><br/><br/><br/>   
@@ -57,5 +97,14 @@
 	 </div>
   </div>
 </body>
-
+<script type="text/javascript">
+	var w=window.innerWidth
+	|| document.documentElement.clientWidth
+	|| document.body.clientWidth;
+	var _w = parseInt(w);
+	$(".blackC_t").css("width",_w+"px");
+	$(".blackC_t").css("height",(_w*0.1)+"px");
+	$("#tbar").css("width",_w+"px");
+	$("#tbar").css("height",(_w*0.1)+"px");
+</script>
 </html>
