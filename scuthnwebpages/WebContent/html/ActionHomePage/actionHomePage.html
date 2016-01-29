@@ -183,57 +183,89 @@
 		</div>
 		<hr style="margin-top:-1px;border:3px solid #FF9900;width:60%;"/>
 		<div id="actsListsContent">
-	      <ul style="list-style:none;">
+	      <ul style="display:inline-block;list-style:none;width:30%;text-align:left;">
 		     <li>
 			    <div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-				    同乡会出游活动&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+				    同乡会出游活动
 				</div>
 			 </li>
              <li>
 			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-                   清补凉DIY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+                   清补凉DIY
 				</div>
 			 </li>
              <li>
 			    <div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-   			       创新创业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+   			       创新创业
 				</div>
 			 </li>
              <li>
 			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-   			       考研经验专题会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+   			       考研经验专题会
 				</div>
 			 </li>
              <li>
 			    <div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-   			       ACM经验专题会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+   			       ACM经验专题会
 				</div>
 			 </li>
 		     <li>
 			    <div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-   			       四叶草运动会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+   			       四叶草运动会
 				</div>
 			 </li>
              <li>
 			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-   			       同乡会实习经验专题会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+   			       同乡会实习经验专题会
 				</div>
 			 </li>
              <li>
 			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-   			       同乡会技术竞赛组队沙龙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+   			       同乡会技术竞赛组队沙龙
 				</div>
 			 </li>
              <li>
 			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-   			       同乡会技术团队招新&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+   			       同乡会技术团队招新
 				</div>
 			 </li>
              <li>
 			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
-   			       阿拉阿拉阿拉阿拉阿拉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+   			       阿拉阿拉阿拉阿拉阿拉
 				</div>
 			 </li>
+		  </ul>
+		  <ul style="display:inline-block;list-style:none;">
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名结束...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	进行中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	进行中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>
 		  </ul>
 		  <div>
 		    <span style="cursor:pointer;width:5%;border-radius:3px;background-color:#FF9900;color:#FFFFFF;" onmouseover="cbc($(this));ccr($(this));" onmouseout="cbcr($(this));cc($(this));">
@@ -384,5 +416,12 @@
 		 $("#foot").css("top",_w_foot);
 		 $("#foot").css("width",_w);		 
 		 $("#foot").css("height",_w/4);
+		 
+		 //设置content居中
+		 var _w_top = $(".top").css("width");
+		 var _w_content = $("#content").css("width");
+		 var _w_topf = parseFloat(_w_top.substring(0,_w_top.length-2));
+		 var _w_contentf = parseFloat(_w_content.substring(0,_w_content.length-2));
+		 $("#content").css("left",((_w_topf-_w_contentf)/2)+"px");
 </script>
 </html>

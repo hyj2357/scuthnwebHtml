@@ -285,5 +285,12 @@
 		 $("#foot").css("top",_w_foot);
 		 $("#foot").css("width",_w);		 
 		 $("#foot").css("height",_w/4);
+		 
+		//…Ë÷√contentæ”÷–
+		 var _w_top = $(".top").css("width");
+		 var _w_content = $("#content").css("width");
+		 var _w_topf = parseFloat(_w_top.substring(0,_w_top.length-2));
+		 var _w_contentf = parseFloat(_w_content.substring(0,_w_content.length-2));
+		 $("#content").css("left",((_w_topf-_w_contentf)/2)+"px");
 </script>
 </html>

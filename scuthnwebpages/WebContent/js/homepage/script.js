@@ -15,7 +15,7 @@ var df = parseFloat(d.substring(0,d.length-2));
 var r = ef/df;
 var before_ef = ef;
 ef = parseInt(w);
-if(ef>1200)          //Èç¹û³ß´çÔÚ1000pxÒÔÉÏ,Í£Ö¹±ä»¯,²¢ÇÒÁ½±ßÁô°×.
+if(ef>1200)          //ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½1000pxï¿½ï¿½ï¿½ï¿½,Í£Ö¹ï¿½ä»¯,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 {
 	var v = (ef - 1200)/2;
 	$("#wrap").css("margin-left",v+"px");
@@ -24,14 +24,14 @@ if(ef>1200)          //Èç¹û³ß´çÔÚ1000pxÒÔÉÏ,Í£Ö¹±ä»¯,²¢ÇÒÁ½±ßÁô°×.
 	$("#topLogo").css("display","inline");
 	$("#topBtn").css("visibility","visible");    
 	$("#otherContent").css("visibility","visible");
-	ef = 1200;    //¹Ì¶¨¿í¶ÈÎª1200px
+	ef = 1200;    //ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½Îª1200px
 }else if(ef<900){
     $("#wrap").css("margin-left",0+"px");
     $("#wrap").css("margin-right",0+"px"); 
 
 	$("#topLogo").css("display","block");
-	$("#topBtn").css("visibility","hidden");    //³ß´ç¹ıµÍÒş²Ø°´Å¥
-	$("#otherContent").css("visibility","hidden");   //³ß´ç¹ıµÍÒş²ØÄÚÈİ
+	$("#topBtn").css("visibility","hidden");    //ï¿½ß´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø°ï¿½Å¥
+	$("#otherContent").css("visibility","hidden");   //ï¿½ß´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 }else{
 	$("#wrap").css("margin-left",0+"px");
     $("#wrap").css("margin-right",0+"px");
@@ -64,6 +64,13 @@ $(".topbar").css("height",h_topBar+"px");
 var w_topBnt = $("#topBtn").css("width");
 var _w_topBnf = parseFloat(w_topBnt.substring(0,e.length-2));
 $("#topBtn").css("height",(_w_topBnf/3.6)+"px");
+
+//è®¾ç½®contentå±…ä¸­
+var _w_top = $(".top").css("width");
+var _w_content = $("#content").css("width");
+var _w_topf = parseFloat(_w_top.substring(0,_w_top.length-2));
+var _w_contentf = parseFloat(_w_content.substring(0,_w_content.length-2));
+$("#content").css("left",((_w_topf-_w_contentf)/2)+"px");
 }
 
 

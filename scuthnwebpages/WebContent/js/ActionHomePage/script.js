@@ -64,6 +64,13 @@ $(".topbar").css("height",h_topBar+"px");
 var w_topBnt = $("#topBtn").css("width");
 var _w_topBnf = parseFloat(w_topBnt.substring(0,e.length-2));
 $("#topBtn").css("height",(_w_topBnf/3.6)+"px");
+
+//设置content居中
+var _w_top = $(".top").css("width");
+var _w_content = $("#content").css("width");
+var _w_topf = parseFloat(_w_top.substring(0,_w_top.length-2));
+var _w_contentf = parseFloat(_w_content.substring(0,_w_content.length-2));
+$("#content").css("left",((_w_topf-_w_contentf)/2)+"px");
 }
 
 
