@@ -1,13 +1,5 @@
 ﻿@charset "utf-8";
 /* CSS Document */
-/**
-body {
-	font: 12px/20px Open Sans, Helvetica, Arial, sans-serif;
-	background:#fff;
-	margin:0;
-	padding:0;
-	color:#686868;
-}**/
 
 #wrapper {
 	background:#fff;
@@ -96,7 +88,7 @@ a:hover {
 	z-index: 100;
 	cursor: pointer;
 	position: relative;
-	background: #393939 url(../../image/public/slider-left-arrow.png) no-Repeat;
+	background: #393939 url(../../images/slider-left-arrow.png) no-Repeat;
 	width: 42px;
 	height: 43px;
 	margin-left: 0px;
@@ -119,7 +111,7 @@ a:hover {
     z-index: 100;
     cursor: pointer;
     position: relative;
-    background: #393939 url(../../image/public/slider-right-arrow.png) no-Repeat 0 0;
+    background: #393939 url(../../images/slider-right-arrow.png) no-Repeat 0 0;
     width: 42px;
     height: 43px;
     margin-left: 0;
