@@ -3,10 +3,14 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />  <!-- 移动端用户不可缩放页面 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0.4, user-scalable=no" />  <!-- 移动端用户不可缩放页面 -->
   <title>华工xx同乡会</title>
   <link rel="stylesheet" type="text/css" href="../../css/ActionHomePage/style.css" />
   <link rel="stylesheet" type="text/css" href="../../css/public/grid-slider.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/public/style.css" media="screen" />
+
+  <script type="text/javascript" src="../../js/public/jquery.banner.revolution.min.js"></script>
+  <script type="text/javascript" src="../../js/public/banner.js"></script>
   <script src="../../js/public/jquery-2.1.4.min.js"></script>
   <script src="../../js/ActionHomePage/script.js"></script>
   
@@ -124,8 +128,8 @@
 		   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))"style="color:#00CCFF;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/homepage/homepage.html';">首页</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;" onclick="window.location = 'http://139.129.24.81:8082/scuthnhtml/html/ActionHomePage/actionHomePage.html';">活动中心</div>&nbsp;&nbsp;&nbsp;
            <div class="barEl" onmouseover="cc($(this))" onmouseout="ccr($(this))">资讯</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))"style="color:#00CCFF;">登录</div>&nbsp;&nbsp;&nbsp;
-           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))"style="color:#CCFF00;">注册</div>&nbsp;&nbsp;&nbsp;
+     	   <div class="barEl" onmouseover="cc($(this))" onmouseout="ccb($(this))" style="color:#00CCFF;" onclick="window.location = '../login/login.html';">登录</div>&nbsp;&nbsp;&nbsp;
+           <div class="barEl" onmouseover="cc($(this))" onmouseout="ccg($(this))" style="color:#CCFF00;" onclick="window.location = '../register/register.html';">注册</div>&nbsp;&nbsp;&nbsp;
 		 </div>
 	  </div>
     </div>
@@ -140,7 +144,7 @@
 		   <span id="otherContent" class="xsi" style="font-family:微软雅黑;color:#E4E4E4;">
 		     <strong>加入华工XX同乡会,和我们一起成长吧!</strong>
 		   </span>
-		   <div id="topBtn" style="height:3em;width:30%;border-width:0.1em;cursor:pointer;border-color:#FF9900;color:#FF9900;border-style:solid;border-radius:19px;font-size:0.5em;margin-left:auto;margin-right:auto;margin-top:2%;" onmousemove="cover();" onmouseout="cout();">
+		   <div id="topBtn" style="height:3em;width:30%;border-width:0.1em;cursor:pointer;border-color:#FF9900;color:#FF9900;border-style:solid;border-radius:19px;font-size:0.5em;margin-left:auto;margin-right:auto;margin-top:2%;" onmousemove="cover();" onmouseout="cout();" onclick="var pos = $('#v').offset().top;$('html,body').animate({ scrollTop: pos },300);">
 		     <div style="padding-top:8%;">
 		        <span class="xsi" style="font-family:微软雅黑;">
 			      <strong>进入主题看看</strong>
@@ -153,14 +157,29 @@
 
   <div id="v" style="position:absolute;left:0px;top:72%;width:100%;height:100%;background-color:#FFFFFF;">
      <div id="title1" style="border-style:solid;border-color:#FFFFFF;border-width:15px 0px 0px 0px;width:100%;height:5%;background-color:#FF9900;">
-	     <img src="http://139.129.24.81:8082/scuthnhtml/image/ActionHomePage/relax1.jpg" style="width:10%;height:100%;max-width:10%;vertical-align:middle;"/>
+	     <img src="../../image/ActionHomePage/relax1.jpg" style="width:10%;height:100%;max-width:10%;vertical-align:middle;"/>
 		 <span class="si" style="font-family:微软雅黑;color:#FFFFFF;padding: 0% 10% 0% 10%;">
 		     <strong>近期活动</strong>
 		 </span>
-         <img src="http://139.129.24.81:8082/scuthnhtml/image/ActionHomePage/swim.jpg" style="width:8%;height:60%;max-width:8%;vertical-align:middle;"/>
+         <img src="../../image/ActionHomePage/swim.jpg" style="width:8%;height:60%;max-width:8%;vertical-align:middle;"/>
 	 </div>
-	 <div id="actions" style="text-align:center;padding:10% 0% 3% 0%;">
-	       <img style="border-radius:6px;box-shadow:0px 0px 8px 0px;width:80%;max-width:80%;"src="../../image/ActionHomePage/u66.jpg"/>
+	 <div id="actions" style="cursor:pointer;text-align:center;padding:10% 0% 3% 0%;background-image:url(../../image/ActionHomePage/u66.jpg);background-size:100% 100%;
+;width:80%;height:20%;margin: 2% 10% 2% 10%;box-shadow:0px 0px 8px 0px;" onclick="window.location='singleActionInfo/singleActionInfo.html';">
+        <div style="margin-top:-12.5%;text-align:center;width:100%;height:20%;background-color:#000000;opacity:.5;">
+		</div>
+		<div style="margin-top:-8%;color:#FF9900;">
+		   <span class="si" style="font-family:微软雅黑;">
+		       <strong>同乡会出游活动</strong>
+		   </span>
+		</div>
+		<div style="margin-top:51%;text-align:center;width:100%;height:20%;background-color:#000000;opacity:.5;">
+		   <div style="cursor:pointer;padding-top:2%;">
+		      <img style="width:5%;max-width:20%;vertical-align:middle;" src="../../image/ActionHomePage/stare_1.png">
+		      <span class="si" style="color:#00CCFF;font-family:微软雅黑;">
+		          <strong>关注该活动</strong>
+		      </span>
+		   </div>
+		</div>
 	 </div>
 	 <div id="actsList" style="text-align:center;padding:0% 0% 5% 0%;font-family:微软雅黑;">
 	    <div class="si" style="margin-left: 45%;width:10%;color:#FFFFFF;background-color:#FF9900;border-radius:6px 6px 0px 0px;">
@@ -168,63 +187,95 @@
 		</div>
 		<hr style="margin-top:-1px;border:3px solid #FF9900;width:60%;"/>
 		<div id="actsListsContent">
-	      <ul style="list-style:none;">
+	      <ul style="display:inline-block;list-style:none;width:30%;text-align:left;">
 		     <li>
-			    <div style="padding:0px 0px 5px 0px;box-shadow: 0px 0px 8px 0px;border-radius: 4px;">
-				    同乡会出游活动&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			    <div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+				    同乡会出游活动
 				</div>
 			 </li>
              <li>
-			 	<div style="padding:0px 0px 5px 0px;">
-                   清补凉DIY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+                   清补凉DIY
 				</div>
 			 </li>
              <li>
-			    <div style="padding:0px 0px 5px 0px;">
-   			       创新创业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			    <div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+   			       创新创业
 				</div>
 			 </li>
              <li>
-			 	<div style="padding:0px 0px 5px 0px;">
-   			       考研经验专题会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+   			       考研经验专题会
 				</div>
 			 </li>
              <li>
-			    <div style="padding:0px 0px 5px 0px;">
-   			       ACM经验专题会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			    <div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+   			       ACM经验专题会
 				</div>
 			 </li>
 		     <li>
-			    <div style="padding:0px 0px 5px 0px;">
-   			       四叶草运动会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			    <div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+   			       四叶草运动会
 				</div>
 			 </li>
              <li>
-			 	<div style="padding:0px 0px 5px 0px;">
-   			       同乡会实习经验专题会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+   			       同乡会实习经验专题会
 				</div>
 			 </li>
              <li>
-			 	<div style="padding:0px 0px 5px 0px;">
-   			       同乡会科技竞赛组队沙龙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+   			       同乡会技术竞赛组队沙龙
 				</div>
 			 </li>
              <li>
-			 	<div style="padding:0px 0px 5px 0px;">
-   			       同乡会技术团队招新&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+   			       同乡会技术团队招新
 				</div>
 			 </li>
              <li>
-			 	<div style="padding:0px 0px 5px 0px;">
-   			       阿拉阿拉阿拉阿拉阿拉&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报名中...
+			 	<div class="action" onmouseover="msonAction($(this));" onmouseout="msoutAction($(this));">
+   			       阿拉阿拉阿拉阿拉阿拉
 				</div>
 			 </li>
 		  </ul>
+		  <ul style="display:inline-block;list-style:none;">
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名结束...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	进行中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	进行中...
+		  	 </li>		  	 
+		  	 <li>
+		  	 	报名中...
+		  	 </li>
+		  </ul>
 		  <div>
-		    <span style="width:5%;border-radius:3px;background-color:#FF9900;color:#FFFFFF;">
+		    <span style="cursor:pointer;width:5%;border-radius:3px;background-color:#FF9900;color:#FFFFFF;" onmouseover="cbc($(this));ccr($(this));" onmouseout="cbcr($(this));cc($(this));">
 		      上一页
 		    </span>
-            <span style="margin-left:10%;width:5%;border-radius:3px;background-color:#FF9900;color:#FFFFFF;">
+            <span style="cursor:pointer;margin-left:10%;width:5%;border-radius:3px;background-color:#FF9900;color:#FFFFFF;" onmouseover="cbc($(this));ccr($(this));" onmouseout="cbcr($(this));cc($(this));">
 		      下一页
 		    </span>
 		  </div>
@@ -238,6 +289,40 @@
 		 </span>
          <img src="../../image/ActionHomePage/shark.jpg" style="width:8%;height:60%;max-width:8%;vertical-align:middle;"/>
 	 </div>
+	<div class="container">
+	  <div id="featured">
+		<div class="content" style="">
+		  <h1>Orbit does content now.</h1>
+		  <h3>Highlight me...I'm text.</h3>
+		</div>
+		<a href=""><img src="images/overflow.jpg" /></a> 
+			<img src="images/captions.jpg" data-caption="#htmlCaption" /> 
+			<img src="images/features.jpg"  /> 
+	  </div>
+	  <span class="orbit-caption" id="htmlCaption">
+		<strong>I'm A Badass Caption:</strong> 
+		I can haz <a href="#">links</a>, <em>style</em> or anything that is valid markup :)
+	  </span> 
+	</div>
+	 <!-- 
+	 <div id="actionsAlbum" style="text-align:center;padding:10% 0% 3% 0%;background-image:url(../../image/ActionHomePage/u1.jpg);background-size:100% 100%;
+;width:60%;height:15%;margin: 2% 20% 2% 20%;box-shadow:0px 0px 8px 0px;">
+        <div style="margin-top:-16.5%;text-align:center;width:100%;height:20%;background-color:#000000;opacity:.5;">
+		</div>
+		<div style="margin-top:-8%;color:#FF9900;">
+		   <span class="si" style="font-family:微软雅黑;">
+		       <strong>同乡会出游活动</strong>
+		   </span>
+		</div>
+		<div style="margin-top:51%;text-align:center;width:100%;height:20%;background-color:#000000;opacity:.5;">
+		   <div style="cursor:pointer;padding-top:2%;">
+		      <img style="width:5%;max-width:20%;vertical-align:middle;" src="../../image/ActionHomePage/stare_1.png">
+		      <span class="si" style="color:#00CCFF;font-family:微软雅黑;">
+		          <strong>收藏该相册</strong>
+		      </span>
+		   </div>
+		</div>
+	 </div> -->
 	 <hr id="sp" style="display:none;width:60%;">
      <div id="wechat" style="display:none;">
         <div>
@@ -282,6 +367,7 @@
          || document.body.clientWidth;
          var _w = parseInt(w);
          
+         //检测是移动端或PC端访问
             var userAgentInfo = navigator.userAgent; 
             var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"); 
             var flag = true; 
@@ -306,7 +392,7 @@
 			$("#topLogo").css("display","block");
 		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
 	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
-		 }else{                                             //移动端访问页面格局自适应
+		 }else if(!flag){                                             //移动端访问页面格局自适应
 			$(".top").css("box-shadow","0px 0px 0px 0px");
             $("#introimgf").css("width","15%");
             $("#introimgs").css("width","15%");
@@ -350,5 +436,12 @@
 		 $("#foot").css("top",_w_foot);
 		 $("#foot").css("width",_w);		 
 		 $("#foot").css("height",_w/4);
+		 
+		 //设置content居中
+		 var _w_top = $(".top").css("width");
+		 var _w_content = $("#content").css("width");
+		 var _w_topf = parseFloat(_w_top.substring(0,_w_top.length-2));
+		 var _w_contentf = parseFloat(_w_content.substring(0,_w_content.length-2));
+		 $("#content").css("left",((_w_topf-_w_contentf)/2)+"px");
 </script>
 </html>
