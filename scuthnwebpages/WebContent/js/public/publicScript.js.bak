@@ -4,9 +4,7 @@ function ccr($this){
 }
 function ccg($this){
      $this.css("color","#CCFF00");
-}
-function ccgD($this){
-     $this.css("color","#00FF00");
+
 }
 function ccb($this){
      $this.css("color","#00CCFF");

@@ -21,7 +21,7 @@
 }
 
 .tagBtn{
-   display:inline-block;
+   display:inline;
    height:25px;
    width:100px;
    border-width:2px;
