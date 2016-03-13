@@ -421,9 +421,15 @@
 						</td>
 					</tr>
 				</table>
+				<div class="tagBtn">
+					上一页
+				</div>
 				<form>
 					<input class="inputTxt" type="text" />
 				</form>
+				<div class="tagBtn">
+					下一页
+				</div>
 			</div>
 		</div>
 	 </div>

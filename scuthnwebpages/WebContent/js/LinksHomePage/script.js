@@ -40,6 +40,17 @@ if(ef>1200)          //���ߴ���1000px����,ֹͣ�仯,���
 	$("#topBtn").css("visibility","visible");    
 	$("#otherContent").css("visibility","visible");
 }
+
+
+//低于740px隐藏置顶资源
+if(w<740){
+	 $("#title").css("display","none");
+	 $("#topLinksContent").css("display","none");
+}else{
+	 $("#title").css("display","block");
+	 $("#topLinksContent").css("display","block");		 
+}
+
 df = ef*0.5;
 
 $(".top").css("width",ef+"px");
@@ -48,9 +59,9 @@ $(".top").css("height",df+"px");
 var top = df;
 $("#v").css("top",top+"px");
 $("#v").css("width",ef+"px");
-$("#v").css("height",(ef*1)+"px");
+$("#v").css("height",(ef*1.5)+"px");
 
-top += ef;
+top += ef*1.5;
 $("#foot").css("top",top+"px");
 $("#foot").css("width",ef+"px");
 $("#foot").css("height",(ef/4)+"px");
@@ -81,6 +92,16 @@ $("#content").css("left",((_w_topf-_w_contentf)/2)+"px");
 		$("#linksTable").css("margin-left","0px");
 	 else
 		$("#linksTable").css("margin-left",((_w_linksList_f-_w_listTable_f)/2)+"px");	
+	 
+	 //设置topLinksTable居中
+	 var _w_topListTable = $("#topLinksTable").css("width");
+	 var _w_topListTable_f = parseFloat(_w_topListTable.substring(0,_w_topListTable.length-2));
+	 var _w_topLinksList = $("#topLinksList").css("width"); 
+	 var _w_topLinksList_f = parseFloat(_w_topLinksList.substring(0,_w_topLinksList.length-2));
+	 if(_w_topListTable_f>=_w_topLinksList_f)
+		$("#topLinksTable").css("margin-left","0px");
+	 else
+		$("#topLinksTable").css("margin-left",((_w_topLinksList_f-_w_topListTable_f)/2)+"px");	
 }
 
 
