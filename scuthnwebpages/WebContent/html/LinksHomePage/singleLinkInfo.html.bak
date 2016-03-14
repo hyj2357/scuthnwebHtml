@@ -107,7 +107,7 @@
        <div>
        </div>
        <div style="padding:10% 0% 10% 0%;color:#FFFFFF;">
-         <div style="cursor:pointer;display:inline;padding" onclick="window.location='../actionHomePage.html';">
+         <div style="cursor:pointer;display:inline;padding" onclick="window.location='LinkHomePage.html';">
             <img style="vertical-align:middle;" src="../../image/ActionHomePage/u70.png"/>
             <span style="font-family:微软雅黑;font-size:1em;">
                <strong>返回资源共享主页</strong>
@@ -169,7 +169,7 @@
 					<div style="display:inline-block;font-family:华文楷体;vertical-align:middle;">
 						<img style="width:60px;height:60px;" src="../../image/homepage/u6.png">
 						<div>
-							<span>小哇</span><br/>
+							<span>狗娃</span><br/>
 							<span>已认证</span>
 						</div>
 					</div>
@@ -188,7 +188,7 @@
 					<div style="display:inline-block;font-family:华文楷体;vertical-align:middle;">
 						<img style="width:60px;height:60px;" src="../../image/homepage/u6.png">
 						<div>
-							<span>小哇</span><br/>
+							<span>狗剩</span><br/>
 							<span>已认证</span>
 						</div>
 					</div>
