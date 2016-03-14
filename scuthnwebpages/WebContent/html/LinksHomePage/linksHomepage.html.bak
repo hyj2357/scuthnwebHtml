@@ -12,88 +12,9 @@
   <script src="../../js/public/publicScript.js"></script>
   
   <script type="text/javascript">
-     //var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
-     //if(parseFloat(w)>768){
         window.onresize=function(){  
                  window.setTimeout("ctop();",200);			 
         } 
-	 //}
-	 /**
-	 window.onload=function(){
-		 var w=window.innerWidth
-         || document.documentElement.clientWidth
-         || document.body.clientWidth;
-         var _w = parseInt(w);
-         
-            var userAgentInfo = navigator.userAgent; 
-            var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"); 
-            var flag = true; 
-            for (var v = 0; v < Agents.length; v++) { 
-                if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; } 
-            }      
-
-		 if(_w>1200 && flag){
-		   var v = (_w -1200)/2;
-		   _w = 1200;
-		   $("#wrap").css("margin-left",v+"px");
-           $("#wrap").css("margin-right",v+"px");
-		 }else if(_w<786 && flag){
-			$("#topLogo").css("display","block");
-		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
-	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
-		 }else if(_w<400 && flag){
-			//$("body").css("background-color","#FFFFFF");
-            $(".blackC_t").css("visibility","hidden");			
-            $(".topbar").css("visibility","hidden");
-			//$(".fillContent").css("background-image","url()");
-			$("#topLogo").css("display","block");
-		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
-	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
-		 }else{
-			$(".top").css("box-shadow","0px 0px 0px 0px");
-            $("#introimgf").css("width","15%");
-            $("#introimgs").css("width","15%");
-            $("#introimgt").css("width","15%");
-            $("#logoimg").css("height","25%");
-
-			$("#content").css("left","5%");
-            $("#content").css("margin-top","10%");
-			$(".xbi").css("font-size","0.6em");
-			$("body").css("background-color","#FFFFFF");
-            $(".blackC_t").css("visibility","hidden");			
-            $(".topbar").css("visibility","hidden");
-
-            $(".floatInfo").css("display","none");     //移动端隐藏浮动微信二维码
-
-			//$(".fillContent").css("background-image","url()");
-			$("#topLogo").css("display","block");
-		   	$("#topBtn").css("visibility","hidden");    //尺寸过低隐藏按钮
-	        $("#otherContent").css("visibility","hidden");   //尺寸过低隐藏内容
-			$("#foot").css("visibility","hidden");
-			$("hr").css("visibility","hidden");
-
-            $("#sp").css("visibility","visible");
-            $("#wechat").css("visibility","visible");
-		 }
-
-		 $(".top").css("width",_w);
-		 $(".top").css("height",_w*0.5);
-
-         $(".blackC_t").css("width",_w);
-         $(".blackC_t").css("height",_w*0.1);
-		 $(".topbar").css("width",_w);		 
-		 $(".topbar").css("height",_w*0.1);
-		 
-		 $("#v").css("top",_w*0.5);
-		 $("#v").css("height",_w*1);
-         $("#v").css("width",_w);
-
-         var _w_foot = _w*1+_w*0.5;
-		 $("#foot").css("top",_w_foot);
-		 $("#foot").css("width",_w);		 
-		 $("#foot").css("height",_w/4);
-		 
-	 }**/
   </script>    
 	<style type="text/css">
 		.inputTxt:focus{
@@ -175,262 +96,349 @@
 			</div>
 		</div>
 		<div id="content" style="padding:2% 0% 2% 0%;border-style:solid;border-radius:0px 0px 8px 8px;border-color:#00CCFF;">
-			<div>
-				<form style="color:#00CCFF;border-color:#00CCFF;display:inline;">
-					<input class="inputTxt" type="text" style="width:25%;" placeholder="搜索资源名称" />
-				</form>
-				<button class="xsi" style="width:120px;color:#00CCFF;">
-					<strong>搜索</strong>
-				</button>
-				<button class="xsi" style="width:120px;color:#00CCFF;">
-					<strong>我要发布资源</strong>
-				</button>
-			</div>
-			<div id="tags">
-				<div class="tagBtn" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
-					<span style="vertical-align:middle;">
-						<strong>专业课程资源</strong>
-					</span>
+			<div id="topLinksContent">
+				<div>
+					<div class="si" style="margin-top:2%;margin-left: 43%;width:15%;color:#FFFFFF;background-color:#00CCFF;border-radius:6px 6px 0px 0px;">
+					   <strong>置顶主题</strong>
+					</div>			
 				</div>
-				<div class="tagBtn" style="color:#FF9900;border-color:#FF9900" onmousemove="cbcr($(this));cc($(this));" onmouseout="cbc($(this));ccr($(this));">
-					<span style="vertical-align:middle;">
-						<strong>通选课资源</strong>
-					</span>
-				</div>
-				<div class="tagBtn" style="color:#00FF00;border-color:#00FF00" onmousemove="cbcgD($(this));cc($(this));" onmouseout="cbc($(this));ccgD($(this));">
-					<span style="vertical-align:middle;">
-						<strong>考研资源</strong>
-					</span>
-				</div>
-				<div class="tagBtn" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
-					<span style="vertical-align:middle;">
-						<strong>专业方向资源</strong>
-					</span>
-				</div>
-				<div class="tagBtn" style="color:#FF9900;border-color:#FF9900" onmousemove="cbcr($(this));cc($(this));" onmouseout="cbc($(this));ccr($(this));">
-					<span style="vertical-align:middle;">
-						<strong>其他资源</strong>
-					</span>
-				</div>
-			</div>
-			<div class="si" style="margin-top:5%;margin-left: 43%;width:15%;color:#FFFFFF;background-color:#00CCFF;border-radius:6px 6px 0px 0px;">
-			   <strong>全部资源主题</strong>
-			</div>
-			<hr style="margin-top:-1px;border:3px solid #00CCFF;width:60%;"/>
-			<div id="linksList" class="si">
-			<!--
-				<ul style="text-align:center;list-style:none;">
-					<li class="linkListItem">
-						<strong>资源类别345341</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-12-31
-					</li>
-					<li class="linkListItem">
-						<strong>资源类别1345345</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-12-31
-					</li>
-					<li class="linkListItem">
-						<strong>资源类别1345</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-12-31
-					</li>
-					<li class="linkListItem">
-						<strong>资源类别3453451</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-12-31
-					</li>
-					<li class="linkListItem">
-						<strong>资源类别31</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-12-31
-					</li>
-					<li class="linkListItem">
-						<strong>资源类别1345</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-12-31
-					</li>
-					<li class="linkListItem">
-						<strong>资源类别1</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015-12-31
-					</li>
-				</ul>
-				-->
-				<table id="linksTable" style="margin-left:30%;margin-bottom:3%;">
-					<tr>
-						<td>
-							<strong>资源类别asdasd1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<strong>资源类别421&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<strong>资源类别234231&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-						</td>
-						<td>
-							类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-						<td>
-							2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</td>
-					</tr>
-				</table>
-				<div class="tagBtn">
-					上一页
-				</div>
-				<form>
-					<input class="inputTxt" type="text" />
-				</form>
-				<div class="tagBtn">
-					下一页
+				<hr style="margin-top:-1px;border:3px solid #00CCFF;width:60%;"/>
+				<div id="topLinksList" class="si" style="margin-bottom:1%;">
+					<table id="topLinksTable" style="margin-left:30%;margin-bottom:3%;">
+						<tr>
+							<td>
+								<strong>资源类别asdasd1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别421&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别234231&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>										
+					</table>
+					<div class="tagBtn" style="display:inline-block;" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
+						上一页
+					</div>&nbsp;&nbsp;&nbsp;
+					<span style="vertical-align:middle;color:#00CCFF;">
+						<strong>1</strong>
+					</span>&nbsp;&nbsp;&nbsp;
+					<div class="tagBtn" style="display:inline-block;" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
+						下一页
+					</div>
 				</div>
 			</div>
+		    <div id="title2" class="bi" style="width:100%;background-color:#00CCFF;">
+				<div style="color:#FFFFFF;padding:2% 0% 2% 0%;">
+					<span>全部资源</span>
+				</div>
+			</div>		
+			<div id="allLinksContent" style="margin-top:2%;">
+				<div>
+					<form style="color:#00CCFF;border-color:#00CCFF;display:inline;">
+						<input class="inputTxt" type="text" style="width:25%;" placeholder="搜索资源名称" />
+					</form>
+					<button class="xsi" style="width:120px;color:#00CCFF;">
+						<strong>搜索</strong>
+					</button>
+					<button class="xsi" style="width:120px;color:#00CCFF;">
+						<strong>我要发布资源</strong>
+					</button>
+				</div>
+				<div id="tags">
+					<div class="tagBtn" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
+						<span style="vertical-align:middle;">
+							<strong>专业课程资源</strong>
+						</span>
+					</div>
+					<div class="tagBtn" style="color:#FF9900;border-color:#FF9900" onmousemove="cbcr($(this));cc($(this));" onmouseout="cbc($(this));ccr($(this));">
+						<span style="vertical-align:middle;">
+							<strong>通选课资源</strong>
+						</span>
+					</div>
+					<div class="tagBtn" style="color:#00FF00;border-color:#00FF00" onmousemove="cbcgD($(this));cc($(this));" onmouseout="cbc($(this));ccgD($(this));">
+						<span style="vertical-align:middle;">
+							<strong>考研资源</strong>
+						</span>
+					</div>
+					<div class="tagBtn" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
+						<span style="vertical-align:middle;">
+							<strong>专业方向资源</strong>
+						</span>
+					</div>
+					<div class="tagBtn" style="color:#FF9900;border-color:#FF9900" onmousemove="cbcr($(this));cc($(this));" onmouseout="cbc($(this));ccr($(this));">
+						<span style="vertical-align:middle;">
+							<strong>其他资源</strong>
+						</span>
+					</div>
+				</div>
+				<div class="si" style="margin-top:5%;margin-left: 43%;width:15%;color:#FFFFFF;background-color:#00CCFF;border-radius:6px 6px 0px 0px;">
+				   <strong>全部资源主题</strong>
+				</div>
+				<hr style="margin-top:-1px;border:3px solid #00CCFF;width:60%;"/>
+				<div id="linksList" class="si">
+					<table id="linksTable" style="margin-left:30%;margin-bottom:3%;">
+						<tr>
+							<td>
+								<strong>资源类别asdasd1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别421&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别234231&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<strong>资源类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+							</td>
+							<td>
+								类别1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								2015-12-31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</td>
+						</tr>
+					</table>
+					<div class="tagBtn" style="display:inline-block;" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
+						上一页
+					</div>&nbsp;&nbsp;&nbsp;
+					<form style="color:#00CCFF;display:inline;vertical-align:middle;">
+						<span class="xsi">
+							第<strong>1</strong>页 &nbsp;&nbsp;共<strong>124</strong>页 &nbsp;&nbsp;跳转页数
+						</span>
+						<input class="inputTxt" type="text" style="vertical-align:middle;width:2.5%;"/>
+					</form>
+					<div class="tagBtn" style="display:inline-block;width:60px;" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
+						跳转
+					</div>&nbsp;&nbsp;&nbsp;
+					<div class="tagBtn" style="display:inline-block;" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
+						下一页
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	 </div>
 
@@ -528,7 +536,16 @@
             $("#sp").css("visibility","visible");
             $("#wechat").css("visibility","visible");
 		 }
-
+		 
+		 //低于740px隐藏置顶资源
+		 if(_w<740){
+			 $("#title").css("display","none");
+			 $("#topLinksContent").css("display","none");
+		 }else{
+			 $("#title").css("display","block");
+			 $("#topLinksContent").css("display","block");		 
+		 }
+		 
 		 $(".top").css("width",_w);
 		 $(".top").css("height",_w*0.5);
 
@@ -538,10 +555,10 @@
 		 $(".topbar").css("height",_w*0.1);
 		 
 		 $("#v").css("top",_w*0.5);
-		 $("#v").css("height",_w*1);
+		 $("#v").css("height",_w*1.5);
          $("#v").css("width",_w);
-
-         var _w_foot = _w*1+_w*0.5;
+         
+         var _w_foot = _w*1.5+_w*0.5;
 		 $("#foot").css("top",_w_foot);
 		 $("#foot").css("width",_w);		 
 		 $("#foot").css("height",_w/4);
@@ -561,6 +578,17 @@
 		 if(_w_listTable_f>=_w_linksList_f)
 			$("#linksTable").css("margin-left","0px");
 		 else
-			$("#linksTable").css("margin-left",((_w_linksList_f-_w_listTable_f)/2)+"px");		
+			$("#linksTable").css("margin-left",((_w_linksList_f-_w_listTable_f)/2)+"px");
+		 
+		 
+		 //设置topLinksTable居中
+		 var _w_topListTable = $("#topLinksTable").css("width");
+		 var _w_topListTable_f = parseFloat(_w_topListTable.substring(0,_w_topListTable.length-2));
+		 var _w_topLinksList = $("#topLinksList").css("width"); 
+		 var _w_topLinksList_f = parseFloat(_w_topLinksList.substring(0,_w_topLinksList.length-2));
+		 if(_w_topListTable_f>=_w_topLinksList_f)
+			$("#topLinksTable").css("margin-left","0px");
+		 else
+			$("#topLinksTable").css("margin-left",((_w_topLinksList_f-_w_topListTable_f)/2)+"px");	
 </script>
 </html>
