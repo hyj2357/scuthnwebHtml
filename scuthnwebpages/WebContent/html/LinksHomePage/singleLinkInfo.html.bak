@@ -206,7 +206,7 @@
 			</table>
 			<div class="tagBtn" style="font-family:н╒хМяе╨з;" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
 				обр╩рЁ
-			</div><br/>
+			</div><br/><br/>
 			<div>
 				<img style="width:30px;height:30px;" src="loading.gif">
 			</div>
