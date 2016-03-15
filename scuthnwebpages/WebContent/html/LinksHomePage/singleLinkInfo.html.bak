@@ -107,7 +107,7 @@
        <div>
        </div>
        <div style="padding:10% 0% 10% 0%;color:#FFFFFF;">
-         <div style="cursor:pointer;display:inline;padding" onclick="window.location='LinkHomePage.html';">
+         <div style="cursor:pointer;display:inline;padding" onclick="window.location='LinksHomePage.html';">
             <img style="vertical-align:middle;" src="../../image/ActionHomePage/u70.png"/>
             <span style="font-family:微软雅黑;font-size:1em;">
                <strong>返回资源共享主页</strong>
@@ -204,6 +204,12 @@
 				</td>
 			  </tr>
 			</table>
+			<div class="tagBtn" style="font-family:微软雅黑;" onmousemove="cbcb($(this));cc($(this));" onmouseout="cbc($(this));ccb($(this));">
+				下一页
+			</div><br/>
+			<div>
+				<img style="width:30px;height:30px;" src="loading.gif">
+			</div>
 		</div><br/><br/>
      </div>
      <div id="foot" style="font-family:微软雅黑;border-radius:6px;margin-top:-5%;box-shadow: 0px 0px 18px 0px;width:100%;height:30%;background-color:#CCCCCC;left:0px;bottom:0px;">   
